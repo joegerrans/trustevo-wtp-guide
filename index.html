@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0B1D3A">
+<meta name="description" content="The complete interactive guide to retirement and inheritance planning for 2026/27 and beyond. Pensions enter the IHT estate in April 2027, thresholds stay frozen to 2031, and the state pension now sits £22 from the tax-free allowance. Income, sequencing, wrappers, estate — the whole system, mapped.">
+<title>The Wealth Turning Point — The Complete Guide to Retirement &amp; Inheritance Planning | TrustEvo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1D3A;--navy-deep:#061428;--navy-soft:#142B4F;--ink:#1A2335;--ink-soft:#4A5568;--ink-muted:#718096;
+  --teal:#13C29B;--teal-dark:#0E8B70;--teal-light:#3ED3B1;--gold:#C9A961;--coral:#E8825C;
+  --cream:#F7F4ED;--cream-warm:#FBF8F2;--white:#FFFFFF;--bg-soft:#F7FAFC;
+  --border-subtle:#E2E8F0;--border-light:#EDF2F7;--alert:#C53030;
+  --radius-sm:6px;--radius-md:12px;--radius-lg:20px;
+  --shadow-sm:0 1px 2px rgba(11,29,58,.05);--shadow-md:0 4px 16px rgba(11,29,58,.08);--shadow-lg:0 12px 40px rgba(11,29,58,.12);
+  --font-display:'Playfair Display',Georgia,'Times New Roman',serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --max-w:880px;--sidebar-w:320px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media(max-width:1024px){html{scroll-behavior:auto}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{font-family:var(--font-body);color:var(--ink);background:var(--cream-warm);line-height:1.7;font-size:16.5px}
+a{color:var(--teal-dark)}
+h1,h2,h3{font-family:var(--font-display);color:var(--navy);line-height:1.15}
+h2{font-size:clamp(1.75rem,3.6vw,2.5rem);font-weight:600;margin:.3em 0 .55em}
+h3{font-size:1.32rem;font-weight:600;margin:1.7em 0 .55em}
+h4{font-size:1rem;font-weight:700;color:var(--navy);margin:1.4em 0 .4em}
+p{margin:0 0 1.05em}
+ul,ol{margin:0 0 1.15em 1.3em}
+li{margin-bottom:.5em}
+strong{color:var(--navy)}
+.eyebrow{display:inline-block;padding:6px 14px;background:rgba(19,194,155,.12);color:var(--teal-dark);border-radius:999px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+.hero .eyebrow{padding:8px 18px;background:rgba(19,194,155,.12);border:1px solid rgba(19,194,155,.3);color:var(--teal-light);font-size:12px;margin-bottom:28px}
+.calc .eyebrow{background:rgba(19,194,155,.15);border:1px solid rgba(19,194,155,.3)}
+.lede{font-size:1.14rem;color:var(--ink-soft);margin-bottom:1.5em}
+blockquote{border-left:3px solid var(--teal);padding:.4em 0 .4em 1.15em;margin:1.5em 0;font-family:var(--font-display);font-size:1.18rem;color:var(--navy-soft)}
+table{width:100%;border-collapse:collapse;margin:1.3em 0;font-size:.92rem;background:var(--white);border-radius:var(--radius-sm);overflow:hidden;box-shadow:var(--shadow-sm)}
+th{background:var(--navy);color:#fff;text-align:left;padding:.68em .85em;font-weight:600;font-size:.84rem}
+td{padding:.64em .85em;border-bottom:1px solid var(--border-light);vertical-align:top}
+tr:last-child td{border-bottom:0}
+.tbl-scroll{clear:both;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -4px;padding:0 4px}
+.note,.warn,.example{border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:20px 22px;margin:1.6em 0;background:var(--white);box-shadow:var(--shadow-sm)}
+.note{border-top:3px solid var(--teal)}
+.warn{border-top:3px solid var(--coral)}
+.example{border-top:3px solid var(--gold);background:var(--cream)}
+.note h4,.warn h4,.example h4{margin-top:0}
+.src{font-size:.78rem;color:var(--ink-muted);margin-top:-.6em}
+/* top navigation (45%% Club template) */
+.topnav{position:fixed;top:0;left:0;right:0;height:64px;background:rgba(11,29,58,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid rgba(255,255,255,.08);width:100%%;max-width:100vw;box-sizing:border-box}
+@media(max-width:640px){.topnav{padding:0 16px}.topnav-word{font-size:19px}.topnav-toc-toggle{padding:7px 12px;font-size:12px}}
+@media(max-width:380px){.topnav{padding:0 12px}.topnav-word{font-size:17px}.topnav-toc-toggle{padding:6px 10px;font-size:11px;gap:6px}.topnav-toc-toggle svg{width:12px;height:12px}}
+.topnav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--white)}
+.topnav-word{font-family:var(--font-body);font-weight:700;font-size:22px;letter-spacing:-.02em}
+.topnav-word .evo{color:var(--teal)}
+.topnav-progress{position:absolute;bottom:0;left:0;height:3px;background:var(--teal);width:0;transition:width .1s linear;box-shadow:0 0 12px var(--teal-light)}
+.topnav-toc-toggle{background:transparent;border:1px solid rgba(255,255,255,.2);color:var(--white);padding:8px 16px;border-radius:var(--radius-sm);font-family:var(--font-body);font-size:13px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .2s ease}
+.topnav-toc-toggle:hover{background:rgba(255,255,255,.1);border-color:var(--teal)}
+@media(min-width:1025px){.topnav-toc-toggle{display:none}}
+/* layout shell — grid on desktop, single column on mobile */
+.shell{display:grid;grid-template-columns:var(--sidebar-w) minmax(0,1fr);min-height:100vh;background:var(--cream-warm);max-width:100%%}
+@media(max-width:1024px){.shell{grid-template-columns:minmax(0,1fr)}}
+.sidebar{position:sticky;top:64px;align-self:start;height:calc(100vh - 64px);overflow-y:auto;padding:40px 28px 60px;border-right:1px solid var(--border-light);background:var(--cream-warm);-webkit-overflow-scrolling:touch}
+.sidebar-heading{font-family:var(--font-body);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:18px}
+.sidebar-nav{list-style:none;margin:0;padding:0}
+.sidebar-nav>li{margin-bottom:6px}
+.sidebar-nav a{display:block;padding:10px 14px;border-radius:var(--radius-sm);text-decoration:none;color:var(--ink-soft);font-size:14px;font-weight:500;line-height:1.4;transition:all .15s ease;border-left:3px solid transparent}
+.sidebar-nav a:hover{background:var(--white);color:var(--navy);border-left-color:var(--teal)}
+.sidebar-nav a.active{background:var(--white);color:var(--navy);border-left-color:var(--teal);font-weight:600;box-shadow:var(--shadow-sm)}
+.sidebar-nav .chapter-num{display:inline-block;width:26px;font-weight:700;color:var(--teal-dark);font-size:12px}
+/* mobile TOC dropdown — slides down from below topnav */
+.mobile-toc{display:none}
+@media(max-width:1024px){
+.mobile-toc{display:block;position:fixed;top:64px;left:0;right:0;max-height:0;overflow:hidden;background:#0B1D3A;z-index:94;box-shadow:0 0 0 rgba(0,0,0,0);transition:max-height .3s ease,box-shadow .3s ease;-webkit-overflow-scrolling:touch}
+body.sidebar-open .mobile-toc{max-height:calc(100vh - 64px);overflow-y:auto;box-shadow:0 12px 32px rgba(0,0,0,.35)}
+.sidebar{display:none !important}
+.topnav{background:#0B1D3A !important;-webkit-backdrop-filter:none !important;backdrop-filter:none !important}
+}
+.mobile-toc-header{padding:14px 22px 10px;color:var(--teal);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.08)}
+.mobile-toc-list{list-style:none !important;margin:0 !important;padding:6px 0 14px !important}
+.mobile-toc-list li{margin:0 !important;padding:0 !important}
+.mobile-toc-list a{display:flex;align-items:center;gap:12px;padding:11px 22px;color:rgba(255,255,255,.85);text-decoration:none;font-size:13px;font-weight:500;line-height:1.3;border-bottom:1px solid rgba(255,255,255,.05);transition:background .15s ease,color .15s ease}
+.mobile-toc-list a:hover,.mobile-toc-list a:active{background:rgba(19,194,155,.15);color:var(--teal)}
+.mobile-toc-list .num{flex-shrink:0;display:inline-block;min-width:28px;font-family:var(--font-display);font-weight:700;color:var(--teal);font-size:13px;font-style:italic}
+main{max-width:var(--max-w);margin:0 auto;padding:0 20px}
+.chapter{padding:66px 0 26px;border-top:1px solid var(--border-subtle)}
+#landscape{border-top:0}
+/* hero */
+.hero{margin-top:64px;background:radial-gradient(1100px 500px at 85% -10%,rgba(19,194,155,.16),transparent 60%),linear-gradient(165deg,var(--navy-deep) 0%,var(--navy) 55%,var(--navy-soft) 100%);color:#E6EDF4;padding:118px 0 70px;position:relative;overflow:hidden}
+.hero-in{max-width:1280px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+.hero h1{color:#fff;font-size:clamp(2.3rem,5.6vw,3.9rem);font-weight:700;max-width:14ch;margin-bottom:.35em}
+.hero h1 .tp{color:var(--teal-light)}
+.hero-subtitle{font-family:var(--font-display);font-size:clamp(1.3rem,2.5vw,1.8rem);color:var(--gold);margin:.25em 0 1em;font-weight:500;line-height:1.3}
+.hero-subtitle .sub-yr{display:block;font-family:var(--font-body);font-size:clamp(.85rem,1.3vw,1rem);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-light);margin-top:.5em}
+.hero .sub{max-width:64ch;color:#B9C8D8;font-size:1.1rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin:1.7em 0 2em}
+.pill{font-size:.77rem;font-weight:600;border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:.45em 1.05em;color:#D3DEE9}
+.pill.mint{border-color:rgba(19,194,155,.6);color:var(--teal-light)}
+.btn{display:inline-block;font:700 .95rem var(--font-body);text-decoration:none;border-radius:10px;padding:.85em 1.6em;letter-spacing:.01em}
+.btn-primary{background:var(--teal);color:var(--navy-deep);box-shadow:0 6px 20px rgba(19,194,155,.35)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.5);color:#fff;margin-left:10px}
+.btn-teal{background:var(--teal-dark);color:#fff}
+.btn-line{border:2px solid var(--teal-dark);color:var(--teal-dark)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+@media(max-width:960px){.hero-grid{grid-template-columns:1fr;gap:30px}}
+.hero-photo{border-radius:var(--radius-lg);overflow:hidden;border:1px solid rgba(255,255,255,.18);box-shadow:0 20px 60px rgba(6,20,40,.5)}
+.hero-photo img{display:block;width:100%;height:clamp(260px,30vw,430px);object-fit:cover}
+.tline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:46px}
+.tp-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);border-left:3px solid var(--teal);border-radius:var(--radius-md);padding:16px 16px 14px}
+.tp-card .yr{font-family:var(--font-display);font-size:1.55rem;color:var(--gold);font-weight:600}
+.tp-card .tt{font-weight:700;font-size:.86rem;color:#fff;margin:.3em 0 .25em}
+.tp-card .dd{font-size:.78rem;color:#A7B7C8;line-height:1.55}
+@media(max-width:760px){.tline{grid-template-columns:1fr 1fr}.btn-ghost{margin:10px 0 0}.hero{padding:40px 0 48px}}
+/* stats, disclaimers */
+.disc{background:var(--white);border:1px solid var(--border-subtle);border-left:4px solid var(--gold);border-radius:var(--radius-md);padding:20px 22px;margin:38px 0;font-size:.9rem;color:var(--ink-soft);box-shadow:var(--shadow-sm)}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;margin:1.5em 0}
+.stat{background:linear-gradient(160deg,var(--navy-deep),var(--navy));border:1px solid rgba(19,194,155,.25);border-top:3px solid var(--teal);border-radius:var(--radius-md);padding:16px 17px;box-shadow:var(--shadow-md)}
+.stat .v{font-family:var(--font-display);font-size:1.55rem;color:#FFFFFF;font-weight:600}
+.stat .l{font-size:.78rem;color:#AFC3D6;line-height:1.5;margin-top:4px}
+.stat .l strong{color:var(--teal-light)}
+/* calculators */
+.calc{background:linear-gradient(160deg,var(--navy-deep),var(--navy) 70%);color:#E3EBF3;border-radius:var(--radius-lg);padding:28px 26px;margin:2.1em 0;box-shadow:var(--shadow-lg)}
+.calc h3{color:#fff;margin-top:0}
+.calc label{display:block;font-size:.8rem;font-weight:700;color:#B9C8D8;margin:15px 0 6px;letter-spacing:.02em}
+.calc input[type=number],.calc select{width:100%;padding:.72em .85em;border-radius:9px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.07);color:#fff;font:600 1rem var(--font-body)}
+.calc input:focus,.calc select:focus{outline:2px solid var(--teal)}
+.calc select option{color:var(--ink)}
+.calc .grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+@media(max-width:640px){.calc .grid2{grid-template-columns:1fr}}
+.calc .out{margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.calc .out{grid-template-columns:1fr}}
+.obox{background:rgba(19,194,155,.1);border:1px solid rgba(19,194,155,.35);border-radius:var(--radius-md);padding:15px 17px}
+.ov{font-family:var(--font-display);font-size:1.75rem;color:var(--teal-light);font-weight:600}
+.ol{font-size:.8rem;color:#AEBFCF;margin-top:3px;line-height:1.5}
+.calc strong,.cta-panel strong,.cta-option-desc strong{color:var(--teal-light)}
+footer strong{color:#E9F0F6}
+.calc .fine{font-size:.73rem;color:#8CA0B4;margin-top:17px;line-height:1.6}
+/* CTAs */
+.mini-cta{background:linear-gradient(135deg,rgba(19,194,155,.1),rgba(19,194,155,.03));border:1px solid rgba(14,139,112,.3);border-radius:var(--radius-md);padding:22px 24px;margin:2.4em 0;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.mini-cta .mini-cta-text{max-width:52ch;margin:0;color:var(--ink-soft)}
+.mini-cta .mini-cta-text strong{color:var(--navy)}
+.cta-panel{background:linear-gradient(165deg,var(--navy-deep),var(--navy));border-radius:var(--radius-lg);padding:34px 30px;margin:2.4em 0;color:#DCE6EF;box-shadow:var(--shadow-lg)}
+.cta-panel-heading{font-family:var(--font-display);color:#fff;font-size:1.7rem;font-weight:600;margin-bottom:.4em}
+.cta-panel-lede{color:#AEBFCF;max-width:60ch}
+.cta-options{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+@media(max-width:760px){.cta-options{grid-template-columns:1fr}}
+.cta-option{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius-md);padding:22px}
+.cta-option-tag{font-size:.7rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--teal-light)}
+.cta-option-title{font-family:var(--font-display);color:#fff;font-size:1.25rem;margin:.45em 0 .4em}
+.cta-option-desc{font-size:.9rem;color:#AEBFCF;margin-bottom:1.1em}
+/* imagery + charts */
+.life{margin:60px 0 10px;border-radius:var(--radius-lg);overflow:hidden;background:var(--navy);box-shadow:var(--shadow-md)}
+.life img{display:block;width:100%;height:clamp(210px,36vw,360px);object-fit:cover}
+.life figcaption{font-size:.88rem;font-weight:500;color:#E4EDF5;padding:14px 22px 16px;background:linear-gradient(160deg,var(--navy-deep),var(--navy));border-top:2px solid var(--teal);line-height:1.55}
+.life.side{float:right;width:38%;margin:6px 0 18px 26px}
+.life.side img{height:clamp(180px,22vw,260px)}
+@media(max-width:820px){.life.side{float:none;width:100%;margin:26px 0 10px}}
+.chapter::after{content:"";display:block;clear:both}
+ol{padding-left:.55em}
+.chartbox{clear:both;background:var(--white);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:20px 18px;margin:1.5em 0;box-shadow:var(--shadow-sm)}
+.chart-h{font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:12px}
+.chartbox svg{width:100%;height:auto}
+.ax{font:600 11px var(--font-body);fill:var(--ink-muted)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.8rem;color:var(--ink-muted);margin-top:10px}
+.legend i{display:inline-block;width:13px;height:4px;border-radius:2px;margin-right:6px;vertical-align:middle}
+footer{background:var(--navy-deep);color:#96A8BB;padding:48px 0 64px;margin-top:80px;font-size:.85rem}
+footer .fin{max-width:var(--max-w);margin:0 auto;padding:0 20px}
+footer .topnav-brand{font-size:1.3rem}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:14px;background:#fff;color:var(--navy);padding:.6em 1em;z-index:200;border-radius:8px}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+</style>
+</head>
+<body>
+<a class="skip" href="#landscape">Skip to content</a>
+
+<nav class="topnav">
+  <a href="#top" class="topnav-brand">
+    <div class="topnav-word">Trust<span class="evo">Evo</span></div>
+  </a>
+  <button class="topnav-toc-toggle" id="tocToggle" type="button" aria-label="Open contents" aria-expanded="false" onclick="TE_toggleSidebar(event)">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="14" y2="18"/></svg>
+    <span class="toggle-label">Contents</span>
+  </button>
+  <div class="topnav-progress" id="progressBar"></div>
+</nav>
+
+<script>
+window.TE_toggleSidebar=function(e){if(e){e.preventDefault();e.stopPropagation()}var o=document.body.classList.toggle('sidebar-open');var b=document.getElementById('tocToggle');if(b)b.setAttribute('aria-expanded',o?'true':'false');return false};
+window.TE_closeSidebar=function(e){if(e&&e.preventDefault)e.preventDefault();document.body.classList.remove('sidebar-open');var b=document.getElementById('tocToggle');if(b)b.setAttribute('aria-expanded','false');return false};
+</script>
+
+<div class="mobile-toc" id="mobileToc" aria-label="Contents">
+  <div class="mobile-toc-header">Contents</div>
+  <ul class="mobile-toc-list">
+<li><a href="#landscape" onclick="TE_closeSidebar()"><span class="num">★</span>The New Retirement Reality</a></li>
+<li><a href="#chapter-1" onclick="TE_closeSidebar()"><span class="num">01</span>What Are You Retiring For?</a></li>
+<li><a href="#chapter-2" onclick="TE_closeSidebar()"><span class="num">02</span>Establish Complete Visibility</a></li>
+<li><a href="#chapter-3" onclick="TE_closeSidebar()"><span class="num">03</span>How Long Must the Money Last?</a></li>
+<li><a href="#chapter-4" onclick="TE_closeSidebar()"><span class="num">04</span>Income Layering &amp; Tax Compression</a></li>
+<li><a href="#chapter-5" onclick="TE_closeSidebar()"><span class="num">05</span>The Early-Retirement Window</a></li>
+<li><a href="#chapter-6" onclick="TE_closeSidebar()"><span class="num">06</span>Withdrawals That Survive 30 Years</a></li>
+<li><a href="#chapter-7" onclick="TE_closeSidebar()"><span class="num">07</span>The Final Working Years</a></li>
+<li><a href="#chapter-8" onclick="TE_closeSidebar()"><span class="num">08</span>The Vehicle Room — Every Wrapper</a></li>
+<li><a href="#chapter-9" onclick="TE_closeSidebar()"><span class="num">09</span>The Multi-Vehicle Playbook</a></li>
+<li><a href="#chapter-10" onclick="TE_closeSidebar()"><span class="num">10</span>What Coordination Is Worth</a></li>
+<li><a href="#chapter-11" onclick="TE_closeSidebar()"><span class="num">11</span>Estate, IHT &amp; the 2027 Change</a></li>
+<li><a href="#chapter-12" onclick="TE_closeSidebar()"><span class="num">12</span>Ten Costly Retirement Mistakes</a></li>
+<li><a href="#chapter-13" onclick="TE_closeSidebar()"><span class="num">13</span>Care Costs &amp; Later Life</a></li>
+<li><a href="#chapter-14" onclick="TE_closeSidebar()"><span class="num">14</span>Survivorship &amp; Legacy</a></li>
+<li><a href="#chapter-15" onclick="TE_closeSidebar()"><span class="num">15</span>A 25-Year Retirement, Modelled</a></li>
+<li><a href="#quickref" onclick="TE_closeSidebar()"><span class="num">QR</span>Quick Reference &amp; Audit</a></li>
+<li><a href="#chapter-16" onclick="TE_closeSidebar()"><span class="num">16</span>Next Steps</a></li>
+  </ul>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-in">
+    <div class="hero-grid">
+    <div>
+    <span class="eyebrow">2026/27 Edition</span>
+    <h1>The Wealth <span class="tp">Turning Point</span></h1>
+    <p class="hero-subtitle">The Complete Guide to Retirement &amp; Inheritance Planning<span class="sub-yr">2026/27 &amp; Beyond</span></p>
+    <p class="sub">The complete guide to retiring, and passing wealth on — under the new rules. Pensions join the inheritance-tax estate in April 2027. Salary sacrifice changes in 2029. Thresholds stay frozen to 2031. The state pension now sits £22 from the tax-free allowance. Sixteen chapters, four calculators, every vehicle, every decision. The whole system in one place.</p>
+    <div class="hero-meta">
+      <span class="pill mint">16 chapters</span><span class="pill mint">4 interactive calculators</span><span class="pill">Every wrapper &amp; vehicle</span><span class="pill">2026/27 figures</span>
+    </div>
+    <a class="btn btn-primary" href="#chapter-1">Start reading</a>
+    <a class="btn btn-ghost" href="#chapter-11">Jump to the 2027 IHT change</a>
+    </div>
+    <div class="hero-photo"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1100&q=72" alt="An empty beach at golden hour, footprints leading toward the sea" loading="eager"></div>
+    </div>
+    <div class="tline" role="list" aria-label="Key rule-change dates">
+      <div class="tp-card" role="listitem"><div class="yr">2027</div><div class="tt">Pensions enter the IHT estate</div><div class="dd">From 6 April 2027, most unused DC pension funds are expected to count towards inheritance tax. Cash ISA limits also fall for most under-65s.</div></div>
+      <div class="tp-card" role="listitem"><div class="yr">2028</div><div class="tt">Pension access age rises to 57</div><div class="dd">The minimum access age rises from 55, reshaping the early-retirement bridge for anyone now in their early fifties.</div></div>
+      <div class="tp-card" role="listitem"><div class="yr">2029</div><div class="tt">Salary-sacrifice NI cap</div><div class="dd">Sacrificed pension contributions above £2,000 a year are due to lose their National Insurance exemption.</div></div>
+      <div class="tp-card" role="listitem"><div class="yr">2031</div><div class="tt">Thresholds frozen until</div><div class="dd">Income-tax and IHT thresholds hold still while pensions, prices and property rise, pulling more income and more estates into tax every year.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="shell">
+<aside class="sidebar" aria-label="Contents">
+  <div class="sidebar-heading">Contents</div>
+  <ul class="sidebar-nav">
+<li><a href="#landscape"><span class="chapter-num">★</span>The New Retirement Reality</a></li>
+<li><a href="#chapter-1"><span class="chapter-num">01</span>What Are You Retiring For?</a></li>
+<li><a href="#chapter-2"><span class="chapter-num">02</span>Establish Complete Visibility</a></li>
+<li><a href="#chapter-3"><span class="chapter-num">03</span>How Long Must the Money Last?</a></li>
+<li><a href="#chapter-4"><span class="chapter-num">04</span>Income Layering &amp; Tax Compression</a></li>
+<li><a href="#chapter-5"><span class="chapter-num">05</span>The Early-Retirement Window</a></li>
+<li><a href="#chapter-6"><span class="chapter-num">06</span>Withdrawals That Survive 30 Years</a></li>
+<li><a href="#chapter-7"><span class="chapter-num">07</span>The Final Working Years</a></li>
+<li><a href="#chapter-8"><span class="chapter-num">08</span>The Vehicle Room — Every Wrapper</a></li>
+<li><a href="#chapter-9"><span class="chapter-num">09</span>The Multi-Vehicle Playbook</a></li>
+<li><a href="#chapter-10"><span class="chapter-num">10</span>What Coordination Is Worth</a></li>
+<li><a href="#chapter-11"><span class="chapter-num">11</span>Estate, IHT &amp; the 2027 Change</a></li>
+<li><a href="#chapter-12"><span class="chapter-num">12</span>Ten Costly Retirement Mistakes</a></li>
+<li><a href="#chapter-13"><span class="chapter-num">13</span>Care Costs &amp; Later Life</a></li>
+<li><a href="#chapter-14"><span class="chapter-num">14</span>Survivorship &amp; Legacy</a></li>
+<li><a href="#chapter-15"><span class="chapter-num">15</span>A 25-Year Retirement, Modelled</a></li>
+<li><a href="#quickref"><span class="chapter-num">QR</span>Quick Reference &amp; Audit</a></li>
+<li><a href="#chapter-16"><span class="chapter-num">16</span>Next Steps</a></li>
+  </ul>
+</aside>
+<div class="content-col">
+<main id="main">
+<div class="disc"><strong>Educational content only.</strong> This guide does not constitute financial, investment, tax, estate or legal advice. It describes rules, mechanics and planning considerations in general terms; it does not recommend any product, structure or course of action. Individual circumstances vary: speak with an FCA-regulated financial adviser, and for estate matters a qualified solicitor, before acting on anything here. TrustEvo is a UK introductions service and is not authorised or regulated by the Financial Conduct Authority.<br><br><strong>Last updated:</strong> July 2026 · <strong>Tax year:</strong> 2026/27 · Figures reflect legislation and announcements up to the 2025 Autumn Budget; measures scheduled for 2027–2031 may be amended before taking effect. Bands quoted are for England, Wales &amp; Northern Ireland; Scotland differs in places.</div>
+<section class="chapter" id="landscape">
+  <span class="eyebrow">At a Glance · Why This Guide Exists Now</span>
+  <h2>The New Retirement Reality</h2>
+  <p class="lede">For forty years, the logic of UK retirement planning barely moved: build the pension, spend other assets first, let the pension pass on largely outside inheritance tax. Between April 2027 and 2031, four scheduled changes unwind that logic at once, and every chapter of this guide exists because of at least one of them.</p>
+  <div class="stat-row">
+    <div class="stat"><div class="v">6 Apr 2027</div><div class="l">Most unused DC pension funds expected to enter the IHT estate for the first time</div></div>
+    <div class="stat"><div class="v">£12,000</div><div class="l">Cash ISA annual limit for most people under 65 from April 2027 (over-65s keep £20,000)</div></div>
+    <div class="stat"><div class="v">£2,000</div><div class="l">Annual cap on NI-exempt salary-sacrifice pension contributions from April 2029</div></div>
+    <div class="stat"><div class="v">£22</div><div class="l">The gap between the full new state pension (~£12,548) and the frozen £12,570 personal allowance</div></div>
+  </div>
+  <p><strong>The 2027 change is the pivot.</strong> Pensions were the last asset to spend precisely because they sat outside the estate. From 6 April 2027, most unused defined-contribution funds are expected to be included in the inheritance-tax estate. Transfers to a surviving spouse remain exempt, death-in-service benefits stay outside, and estates within available nil-rate bands, up to £1m combined for some couples — pay nothing. Above the bands, inherited pension wealth can face inheritance tax and, where the holder died after 75, income tax on top when the beneficiary draws it: a combined worst case of roughly 67%. Chapter 11 takes the mechanics apart.</p>
+  <p><strong>The freeze is the multiplier.</strong> Income-tax thresholds and the £325,000 nil-rate band hold still while pensions, prices and property rise. The state pension alone now consumes all but £22 of the personal allowance, so virtually every pound of private pension a state pensioner draws is taxed from the first pound. Retirement income planning and tax planning have become the same discipline.</p>
+  <p><strong>The other dates reshape the edges.</strong> The cash-ISA cut constrains where retirement cash sits from 2027. The 2029 sacrifice cap changes late-career funding economics. The access age rises to 57 in 2028, narrowing the early-retirement bridge for anyone now 52–54.</p>
+  <p>What has not changed is the amount there is to get right. Goals, longevity, income layering, sequencing, sustainable withdrawal rates, ten different wrappers, drawdown order across all of them, estate structure, care funding, survivorship. Each interacts with the others, and a decision taken in isolation in one area routinely undoes good work in another. This guide maps the whole system. Read it end to end, or jump straight to the chapters that touch your position.</p>
+</section>
+
+<section class="chapter" id="chapter-1">
+  <span class="eyebrow">Chapter 01 · Where Planning Begins</span>
+  <h2>What Are You Retiring For?</h2>
+  <p class="lede">What is your plan for retirement? Indulging a lifelong passion? Travelling? Time with grandchildren? Working part-time on your own terms? There are as many answers as there are retirements, but from a financial perspective, almost all of them resolve into four goals. Before you focus on anything else, work out which are yours. You cannot plot a route until you know where you are going.</p>
+  <h3>The four financial goals</h3>
+  <ul>
+    <li><strong>Avoid running out of money.</strong> For most people, the number-one goal, and the number-one fear. Being forced to turn to your children, or back to work, is the outcome the whole plan exists to prevent. Many assume the answer is holding only very low-volatility investments. As Chapters 3 and 6 show, that instinct can quietly raise the very risk it fears, by letting inflation outrun the portfolio for thirty years.</li>
+    <li><strong>Maintain or improve your lifestyle.</strong> You worked hard for this. The key is maintaining purchasing power over time, which requires income that grows, not income that merely arrives.</li>
+    <li><strong>Increase wealth.</strong> Where lifestyle is comfortably covered, the goal often becomes legacy: children, grandchildren, charity. Growth-oriented investing and estate structure (Chapters 11 and 14) move to the centre.</li>
+    <li><strong>Spend everything.</strong> A perfectly legitimate goal, and a risky one, because nobody knows how long retirement lasts, and life expectancies keep trending upwards. Spending to the average horizon means a roughly even chance of outliving the plan.</li>
+  </ul>
+  <h3>A sharper version: the terminal-value question</h3>
+  <p>A precise way to pin the goal down is to name your portfolio's intended <em>ending value</em>: the amount you plan to have at the end of your investment time horizon. Four honest answers exist: <strong>grow it</strong> (increase purchasing power as far as possible), <strong>maintain it in real terms</strong> (finish with today's purchasing power intact), <strong>deplete it</strong> (no desire to leave assets behind), or <strong>target a specific figure</strong>, perhaps to pass to children. Naming the terminal value turns a vague hope into a roadmap, and it becomes far easier to hold your strategy through market volatility, because you know what the portfolio is <em>for</em>.</p>
+  <h3>What will retirement cost?</h3>
+  <p>Four factors set the bill: non-discretionary spending, discretionary spending, inflation, and your time horizon. The first two deserve a hard look now; the second two get Chapter 3 to themselves.</p>
+  <h4>Non-discretionary — the spending you cannot decline</h4>
+  <ul>
+    <li><strong>Living expenses.</strong> Day to day, what does your lifestyle cost — shopping, fuel, heating, insurance? If you are not relocating, you already know these numbers better than any planner will.</li>
+    <li><strong>Debt.</strong> Mortgage, credit, loans. Anything owed keeps demanding principal and interest whether or not a salary arrives.</li>
+    <li><strong>Taxes.</strong> Taxes may fall in retirement; they do not stop. Under frozen thresholds they grow in real terms even when spending does not — keep money set aside for the year-end bill.</li>
+  </ul>
+  <h4>Discretionary — the spending you choose</h4>
+  <ul>
+    <li><strong>Travel.</strong> The dream trip deferred for years, visiting grandchildren, winters somewhere warm. Usually front-loaded into the earliest, healthiest years — budget it that way.</li>
+    <li><strong>Hobbies.</strong> Restarting old ones, mastering new ones. Almost all carry costs, even when each is small.</li>
+    <li><strong>Luxuries.</strong> Fine wine or simply coffee with friends most mornings — non-essential purchases belong in the plan, not outside it.</li>
+    <li><strong>Children and grandchildren.</strong> For many households this category quietly contains all the others: travel, luxury and favourite hobby at once. If family is a focus of your retirement, decide the cash flow that supports it deliberately.</li>
+  </ul>
+  <p>One honest test: if there is an expense you cannot imagine living without — the TV package is discretionary, the annual family holiday is not — move it into the non-discretionary column, whatever it is called.</p>
+  <h3>Putting it on one page</h3>
+  <div class="tbl-scroll"><table>
+    <tr><th>Income (without touching investments)</th><th>£/yr</th><th>Expenses</th><th>£/yr</th></tr>
+    <tr><td>Salary or part-time earnings</td><td></td><td>Basic living costs</td><td></td></tr>
+    <tr><td>State pension (check your forecast)</td><td></td><td>Mortgage / loans / cards</td><td></td></tr>
+    <tr><td>Defined-benefit pension income</td><td></td><td>Taxes</td><td></td></tr>
+    <tr><td>Business &amp; property income</td><td></td><td>Travel · hobbies · luxuries</td><td></td></tr>
+    <tr><td>Other (annuities, trusts)</td><td></td><td>Gifts to family / charity</td><td></td></tr>
+    <tr><td><strong>Total income</strong></td><td></td><td><strong>Total expenses</strong></td><td></td></tr>
+  </table></div>
+  <p><strong>Total income minus total expenses is your net position.</strong> If it is negative, as it is for most affluent retirees — the shortfall is the job your portfolio must do, every year, rising with inflation. That single number drives every chapter that follows. (Treat business and rental income as more exposed to conditions than the state pension or a guaranteed pension when you count it.)</p>
+  <div class="example"><h4>Difficult decisions, and why deciding early wins</h4>
+  <p style="margin:0">Investing requires trade-offs: more short-term volatility for higher long-term returns, and hard choices between discretionary priorities. A grandchild's university costs and the dream holiday may both matter; the plan may fund both, one, or possibly neither. What decades of adviser experience shows is that being clear, with yourself, and with family, about what is affordable <em>before</em> spending is expected beats discovering the answer mid-retirement, when emotions have entered and the bill has grown. Two further cautions: many people spend <em>more</em> in early retirement than while working; and any time withdrawals push past roughly 5% of the portfolio, the risk of depleting it rises sharply (Chapter 6).</p></div>
+  <div class="note"><h4>The four questions that decide most retirements</h4>
+  <p style="margin:0">Strip retirement planning to its load-bearing walls and four questions remain. <strong>How long must the portfolio provide for you?</strong> Your horizon, honestly assessed (Chapter 3). <strong>What will withdrawals and inflation do to it?</strong> The sustainability maths (Chapter 6). <strong>What is the portfolio's primary objective?</strong> The terminal-value answer above. <strong>Which trade-offs are you prepared to make?</strong> More volatility for more growth, or lower spending for more certainty. Answer these four honestly and every later chapter becomes a matter of execution. Skip them and no amount of product knowledge compensates.</p></div>
+  <div class="mini-cta"><p class="mini-cta-text"><strong>Not sure which goal leads, or what your number is?</strong> A short conversation often settles in twenty minutes what spreadsheets circle for months.</p><a class="btn btn-teal" href="https://trustevo.co.uk/arrange-introduction">Arrange an adviser introduction</a></div>
+</section>
+
+<section class="chapter" id="chapter-2">
+  <span class="eyebrow">Chapter 02 · Know What You Own</span>
+  <h2>Establish Complete Visibility</h2>
+  <p class="lede">Before sequencing, tax efficiency or sustainability can be planned, one question needs an honest answer: do you fully understand the structure of your own retirement system? Most people believe they do. Many discover they do not.</p>
+  <h3>The retirement inventory</h3>
+  <p><strong>1 · Every pension arrangement.</strong> For each: provider, current value, defined benefit or defined contribution, normal and earliest access ages, contribution level, investment approach, visible charges — and, critically after 2027, when the beneficiary nomination was last reviewed. The DB/DC distinction shapes everything downstream: <strong>a DB scheme behaves like income</strong> — fixed, taxable, often inflation-linked (sometimes capped), consuming tax bands immediately; <strong>a DC scheme behaves like capital</strong> — flexible, sequenceable, with up to 25% available tax-free within the £268,275 lump-sum allowance. Confusing the two leads straight to poor planning.</p>
+  <p><strong>2 · State pension position.</strong> Your forecast, National Insurance record and gaps, and your state pension age. The full new state pension is <strong>£241.30 a week, roughly £12,548 a year</strong>, for 2026/27, against a £12,570 personal allowance. It is taxable, it consumes nearly the whole tax-free allowance by itself, and Chapter 4 shows why that £22 remainder matters so much. Check your personal forecast at <a href="https://www.gov.uk/check-state-pension" rel="noopener">gov.uk/check-state-pension</a>; the full figure assumes around 35 qualifying years, gaps can sometimes be filled deliberately, and claiming can be deferred, with the pension increasing for each year it is put off, a lever that occasionally suits those still earning at state pension age.</p>
+  <p><strong>3 · ISAs and taxable assets.</strong> Stocks &amp; shares ISAs, cash ISAs, general investment accounts, cash — listed separately, because each is taxed differently on the way out. ISA withdrawals are never income for tax purposes; GIA dividends, interest and gains are taxable; cash interest above the personal savings allowance (£1,000 basic rate, £500 higher, nil additional) is taxable.</p>
+  <p><strong>4 · Every other income source.</strong> Rental profit, dividends from a business you still own, consultancy earnings, annuities in payment, trust income. HMRC totals the lot inside one tax year — the mechanism at the heart of Chapter 4.</p>
+  <div class="example"><h4>Worked example — "looks simple" rarely is</h4>
+  <p>Sarah, 58, believes she has "one pension and some savings". On review she holds four historic workplace pensions (£410,000 combined), one active workplace pension (£140,000), a SIPP (£220,000), a DB entitlement paying £18,000 from 65, ISAs of £160,000, £45,000 in cash, and a full state pension from 67.</p>
+  <p style="margin:0">Nothing here is wrong. But until she knows whether the four historic pots overlap in allocation, what their combined charges are, whether the DB income is inflation-capped, and whether every beneficiary nomination is current, every sequencing decision that follows is a guess. Visibility first. Strategy second.</p></div>
+</section>
+
+<figure class="life"><img src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?auto=format&fit=crop&w=1600&q=70" alt="A long wooden boardwalk running through tall forest" loading="lazy"><figcaption>Retiring at 60 usually means planning a thirty-year walk. The next two chapters measure the path.</figcaption></figure>
+
+<section class="chapter" id="chapter-3">
+  <span class="eyebrow">Chapter 03 · The Horizon</span>
+  <h2>How Long Must the Money Last?</h2>
+  <p class="lede">The most under-estimated number in retirement planning is not a tax rate. It is a lifespan. Most people plan to an intuition about how long they will live, and the intuition runs short, usually by a decade.</p>
+  <h3>What the tables really say</h3>
+  <div class="tbl-scroll"><table>
+    <tr><th>If you are now…</th><th>On average you live to</th><th>If you are now…</th><th>On average you live to</th></tr>
+    <tr><td>55</td><td>83</td><td>71</td><td>86</td></tr>
+    <tr><td>60</td><td>84</td><td>75</td><td>87</td></tr>
+    <tr><td>65</td><td>85</td><td>80</td><td>89</td></tr>
+    <tr><td>68</td><td>85</td><td>85</td><td>91</td></tr>
+    <tr><td>70</td><td>86</td><td>90</td><td>94</td></tr>
+  </table></div>
+  <p class="src">Source: UK Office for National Statistics life tables, rounded to the nearest year.</p>
+  <p>Notice the figures rise with age, and that is not a misprint. These are conditional averages: a 90-year-old has already come through every risk of the previous decades, so the average age that group reaches is higher than for 55-year-olds as a whole. The message for planning is the same at every age, though: whatever number sits opposite yours, it is an average, and averages likely understate how long people will actually live as medicine keeps advancing.</p>
+  <p>Two things make the table more demanding than it looks. First, these are averages — <strong>about half of each bracket lives longer</strong>, so planning to the number itself is a coin-flip. Second, your household horizon runs to the longer of two lives: a younger or healthier spouse can add years the plan must fund (Chapter 14). Heredity and current health push individual horizons wide in both directions. The bottom line: your time horizon is probably longer than you realise. Retiring at 60 usually means building for 25 to 35 years: plan for a long life, and build the income to match it.</p>
+  <h3>Inflation, the quiet thief</h3>
+  <p>Inflation decreases purchasing power over time and erodes real savings and returns — quietly, relentlessly, and without appearing on any statement. UK inflation has averaged a little over 4% a year across the last century. Carry that rate forward and a household needing <strong>£50,000 today needs about £115,000 in 20 years and £175,000 in 30</strong> just to stand still. Leave £500,000 uninvested today and within thirty years it holds the buying power of roughly £140,000. Even at a well-behaved 2%, costs rise 22% in a decade, and recent years have reminded everyone that inflation does not stay well-behaved. From 1973 to 1981 it averaged around 15%; in 2022 it topped 10%.</p>
+  <p>Two personal wrinkles compound the arithmetic: your own inflation rate can run higher than the headline (care, travel and insurance inflate faster than the basket), and a small annual difference — barely visible month to month — becomes an enormous difference over thirty years. This is why "playing it safe" needs careful definition: a portfolio with no growth engine does not avoid risk. It swaps visible short-term volatility for the quieter, compounding certainty of falling behind, with no drama, and no recovery.</p>
+  <div class="calc" id="calc-inflation">
+    <span class="eyebrow">Interactive Calculator</span>
+    <h3>Purchasing-Power Projector</h3>
+    <p style="color:#AEBFCF;font-size:.9rem">How much annual income will the same lifestyle require in future years?</p>
+    <div class="grid2">
+      <div><label for="pp-income">Annual income needed today (£)</label><input type="number" id="pp-income" value="50000" min="0" step="1000"></div>
+      <div><label for="pp-years">Years from now</label><input type="number" id="pp-years" value="20" min="1" max="40" step="1"></div>
+      <div><label for="pp-rate">Assumed annual inflation (%)</label><input type="number" id="pp-rate" value="3" min="0" max="10" step="0.5"></div>
+    </div>
+    <div class="out">
+      <div class="obox"><div class="ov" id="pp-out">£90,306</div><div class="ol" id="pp-lbl">needed per year in 20 years for the same lifestyle</div></div>
+      <div class="obox"><div class="ov" id="pp-mult">×1.81</div><div class="ol">multiple of today's income requirement</div></div>
+    </div>
+    <p class="fine">Illustration only, assuming one constant inflation rate; actual inflation varies year to year and personal inflation can differ from headline rates. Not financial advice.</p>
+  </div>
+</section>
+
+<section class="chapter" id="chapter-4">
+  <span class="eyebrow">Chapter 04 · How Retirement Is Taxed</span>
+  <h2>Income Layering &amp; Tax Compression</h2>
+  <p class="lede">Retirement income is not taxed source by source. HMRC totals everything (state pension, DB income, DC withdrawals, rental profit, dividends, interest) inside one tax year. The order in which income stacks decides how much of it survives.</p>
+  <h3>The £22 problem</h3>
+  <p>Start with the layer nobody controls. The full new state pension (~£12,548) sits £22 beneath the £12,570 personal allowance, an allowance frozen until at least 2028, with wider freezes running to 2031. The consequence is blunt: <strong>for a full state pensioner, effectively every pound of other taxable income is taxed from the first pound.</strong> A £20,000 DC withdrawal on top of the state pension is not "mostly tax-free income for a modest retiree". It is almost entirely 20% territory, and larger withdrawals climb from there. Each triple-lock rise now presses directly against a frozen allowance; the £22 gap is closing, not opening.</p>
+  <h3>Compression in practice</h3>
+  <div class="example"><h4>David, 67</h4>
+  <p>David receives a £35,000 DB pension, the £12,548 state pension, and draws £20,000 from his DC pot: £67,548 of taxable income. After the allowance, £37,700 is taxed at 20% and £17,278 at 40%.</p>
+  <p style="margin:0">He raises his DC withdrawal by £15,000 for a new kitchen, and the entire increase lands in the 40% band. He has not changed the tax system; he has changed the layering. <strong>Fixed income (state pension, DB) consumes the lower bands automatically. Flexible income (DC, dividends, rent) stacks on top.</strong> Planning the flexible layer around the fixed layer is the core skill of retirement tax management, and the reason the drawdown order in Chapter 9 exists.</p></div>
+  <h3>The £100,000 threshold reappears</h3>
+  <p>The personal-allowance taper is not an employment phenomenon. Where DB income is substantial, DC withdrawals are large, or rental and dividend income continue, retirement income can cross £100,000, and the allowance then tapers away at £1 for every £2, producing marginal rates around 60% on the affected slice until £125,140. Under frozen thresholds, inflation-linked withdrawals drift households into this zone with no lifestyle change at all. Chapter 15's model watches it happen.</p>
+  <div class="calc" id="calc-stack">
+    <span class="eyebrow">Interactive Calculator</span>
+    <h3>Retirement Income Tax Estimator</h3>
+    <p style="color:#AEBFCF;font-size:.9rem">Stack your income layers and see the estimated 2026/27 position, including the state pension's effect on the allowance.</p>
+    <div class="grid2">
+      <div><label for="st-sp">State pension (£/yr)</label><input type="number" id="st-sp" value="12548" min="0" step="100"></div>
+      <div><label for="st-db">DB pension &amp; other fixed taxable income (£/yr)</label><input type="number" id="st-db" value="20000" min="0" step="500"></div>
+      <div><label for="st-dc">Taxable DC withdrawals (£/yr, excl. tax-free cash)</label><input type="number" id="st-dc" value="20000" min="0" step="500"></div>
+      <div><label for="st-oth">Rental &amp; other taxable income (£/yr)</label><input type="number" id="st-oth" value="0" min="0" step="500"></div>
+    </div>
+    <div class="out">
+      <div class="obox"><div class="ov" id="st-tax">£8,451</div><div class="ol">estimated income tax for the year</div></div>
+      <div class="obox"><div class="ov" id="st-rate">16.1%</div><div class="ol" id="st-note">average rate · top slice taxed at 40%</div></div>
+    </div>
+    <p class="fine">Illustration only. Applies 2026/27 England, Wales &amp; NI bands (allowance £12,570, tapering above £100,000; 20% to £50,270; 40% to £125,140; 45% above) to total non-savings income. Excludes the separate dividend and savings rates and allowances, National Insurance (not charged on pension income), Scottish rates and all reliefs. Your position may differ materially, not advice.</p>
+  </div>
+  <div class="mini-cta"><p class="mini-cta-text"><strong>Layering decisions compound for decades, and now interact with the 2027 estate rules.</strong> Sequencing is the single most common topic in first adviser conversations.</p><a class="btn btn-teal" href="https://trustevo.co.uk/arrange-introduction">Arrange an adviser introduction</a></div>
+</section>
+
+<section class="chapter" id="chapter-5">
+  <span class="eyebrow">Chapter 05 · The Underused Decade</span>
+  <h2>The Early-Retirement Window</h2>
+  <p class="lede">Between pension access age (55 today, 57 from April 2028, and state pension age at 66–67 sits the most underused planning window in UK retirement: the years when you control almost all of your own taxable income.</p>
+  <p>The window is structurally unlike anything that follows. Employment income may have stopped. DB income may not have started. The state pension has not begun. Baseline taxable income is often low, which means the personal allowance and basic-rate band sit substantially <em>empty</em>, waiting. Once the state pension starts, roughly £12,548 of that space is consumed automatically, every year, for life.</p>
+  <p>The central question: <strong>draw income gradually now, while bands are wide, or defer until later, when they will be compressed?</strong> Instinct says defer; leave the pension untouched. The arithmetic often disagrees, and after April 2027 the estate rules disagree more loudly still.</p>
+  <div class="example"><h4>Two strategies — Andrew, 60</h4>
+  <p>Andrew has a £30,000 DB pension, a £600,000 DC pot, £200,000 in ISAs, needs £50,000 gross a year, and gets the state pension at 67.</p>
+  <p><strong>Strategy A — defer DC until 67.</strong> He lives on DB plus £20,000 of tax-free ISA withdrawals. Taxable income is just £30,000, but the allowance headroom and much of the basic band go unused for seven straight years, and unused band space cannot be reclaimed. At 67 the state pension lifts his fixed taxable base to about £42,548 before a pound of DC is drawn; every future withdrawal stacks from there, and the untouched pot has compounded into a larger, later tax problem, in income terms and, from 2027, in estate terms.</p>
+  <p style="margin:0"><strong>Strategy B — structured drawdown before 67.</strong> He blends £30,000 DB + £10,000 DC + £10,000 ISA, deliberately filling basic-rate space while it exists. Lifetime tax is smoothed rather than concentrated; the DC pot is smaller when the compressed years arrive, and smaller when the estate is eventually valued. Chapter 15 runs this trade over a full 25 years.</p></div>
+  <h3>The 2028 access-age change</h3>
+  <p>Anyone now 52–54 faces a moving floor: minimum pension age rises from 55 to 57 on 6 April 2028, with limited protections for some schemes. Planning to stop work in the mid-fifties may mean bridging entirely from ISAs and taxable assets for a year or two: one more reason wrapper balance (Chapters 8 and 9) is decided years before retirement, not at it.</p>
+  <p>And one caution against casual access: drawing taxable DC income early can trigger the Money Purchase Annual Allowance, permanently capping future pension funding at £10,000 a year, a serious constraint for anyone easing out of work gradually. Chapter 7 covers the tripwire. The window rewards deliberate use, not early raids.</p>
+</section>
+
+<figure class="life"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1600&q=70" alt="A canoe crossing a still mountain lake at first light" loading="lazy"><figcaption>The first decade of retirement is the healthiest and the most flexible. The tax system quietly rewards those who use it deliberately.</figcaption></figure>
+
+<section class="chapter" id="chapter-6">
+  <span class="eyebrow">Chapter 06 · Sustainability</span>
+  <h2>Withdrawals That Survive 30 Years</h2>
+  <p class="lede">Accumulation and retirement are different disciplines. While saving, volatility is uncomfortable but usually recoverable. While withdrawing, volatility interacts with cash flow, and that interaction, not the volatility itself, is what empties portfolios early.</p>
+  <h3>The 10% mistake</h3>
+  <p>A common, and incorrect — assumption runs: equities have annualised around 10% over the very long term, so withdrawing 10% a year must be safe. The maths says otherwise, because markets never deliver their average in a straight line. If your portfolio falls 20% and you take a 10% distribution anyway, you need roughly a 39% gain just to return to the starting value. A couple of bear-market years of that early in retirement can do damage no later bull market repairs.</p>
+  <h3>What the historical record shows</h3>
+  <p>Modelling withdrawal rates against 30-year rolling market histories starting in 1926 — withdrawals rising with inflation throughout — produces a picture every retiree should see once:</p>
+  <div class="tbl-scroll"><table>
+    <tr><th>Withdrawal rate on £500,000</th><th>£/yr (year 1)</th><th>Survived 30 yrs — 100% equity</th><th>Survived 30 yrs — 50/50</th><th>Median ending value (100% equity)</th></tr>
+    <tr><td>10%</td><td>£50,000</td><td>22.4%</td><td>10.4%</td><td>£0</td></tr>
+    <tr><td>7%</td><td>£35,000</td><td>68.7%</td><td>46.3%</td><td>£780,257</td></tr>
+    <tr><td>5%</td><td>£25,000</td><td>94.0%</td><td>92.5%</td><td>£4,984,570</td></tr>
+    <tr><td>3%</td><td>£15,000</td><td>100%</td><td>100%</td><td>£8,628,861</td></tr>
+    <tr><td>No withdrawals</td><td>—</td><td>100%</td><td>100%</td><td>£13,327,431</td></tr>
+  </table></div>
+  <p class="src">Historical simulation of 30-year rolling periods from 1926 (developed-world equity and 10-year government bond indices, GBP), withdrawals inflation-adjusted. Past performance neither guarantees nor reliably indicates future performance; illustration only.</p>
+  <div class="chartbox">
+    <div class="chart-h">Probability a £500,000 portfolio survives 30 years, by withdrawal rate (100% equity) — illustrative</div>
+    <svg viewBox="0 0 640 240" role="img" aria-label="Bar chart: 10 percent withdrawals survive 22 percent of the time; 7 percent survive 69 percent; 5 percent survive 94 percent; 3 percent survive every period.">
+      <line x1="70" y1="200" x2="620" y2="200" stroke="#E2E8F0"/>
+      <rect x="100" y="158" width="90" height="42" rx="4" fill="#E8825C"/><text x="145" y="150" text-anchor="middle" class="ax">22.4%</text><text x="145" y="220" text-anchor="middle" class="ax">10%</text>
+      <rect x="240" y="70" width="90" height="130" rx="4" fill="#C9A961"/><text x="285" y="62" text-anchor="middle" class="ax">68.7%</text><text x="285" y="220" text-anchor="middle" class="ax">7%</text>
+      <rect x="380" y="22" width="90" height="178" rx="4" fill="#13C29B"/><text x="425" y="16" text-anchor="middle" class="ax">94.0%</text><text x="425" y="220" text-anchor="middle" class="ax">5%</text>
+      <rect x="520" y="11" width="90" height="189" rx="4" fill="#0E8B70"/><text x="565" y="8" text-anchor="middle" class="ax" style="font-size:10px">100%</text><text x="565" y="220" text-anchor="middle" class="ax">3%</text>
+    </svg>
+  </div>
+  <p>Three readings matter. At 10%, even a fully equity portfolio survives barely one period in five — "hardly comforting" is an understatement. Cutting to 5% lifts survival above 90% <em>across allocations</em>, which is why most people should plan on taking no more than about 5% a year unless their circumstances genuinely justify otherwise. And at 3%, portfolios historically finished larger than they began under every allocation tested — the withdrawal rate, not the market, was the decisive variable.</p>
+  <h3>Sequencing risk — when returns arrive matters</h3>
+  <p>Two retirees can earn identical <em>average</em> returns over 20 years, and one runs out while the other finishes wealthy — purely because their good and bad years arrived in a different order. Poor early returns plus fixed withdrawals force the sale of more units at low prices, permanently shrinking the base later recoveries compound from. The first five to ten years carry disproportionate weight; resilience is designed in advance, not improvised in a downturn.</p>
+  <h3>Allocation over the right horizon</h3>
+  <div class="tbl-scroll"><table>
+    <tr><th>Allocation</th><th>5-yr rolling: avg return</th><th>5-yr: volatility</th><th>20-yr rolling: avg return</th><th>20-yr: volatility</th></tr>
+    <tr><td>100% equities</td><td>10.4%</td><td>7.8%</td><td>10.8%</td><td>3.5%</td></tr>
+    <tr><td>70% equities / 30% fixed interest</td><td>9.5%</td><td>5.9%</td><td>9.8%</td><td>3.0%</td></tr>
+    <tr><td>50% / 50%</td><td>8.9%</td><td>5.0%</td><td>9.2%</td><td>2.8%</td></tr>
+    <tr><td>100% fixed interest</td><td>7.4%</td><td>5.0%</td><td>7.6%</td><td>3.7%</td></tr>
+  </table></div>
+  <p class="src">Rolling monthly returns 1926–2022, world equity and global government bond indices in GBP; volatility = standard deviation of annualised returns. Estimates; past performance does not guarantee future results.</p>
+  <p>Read the right-hand columns twice. Over five-year windows, equities buy higher returns with visibly higher volatility — the trade everyone expects. Over twenty-year windows, equities have historically delivered their higher returns with <em>lower</em> variability of outcome than fixed interest. A 30-year retirement is a twenty-year problem twice over: for many retirees the honest risk conversation is not "can I stomach equities?" but "can my plan survive without enough of them?", a personal question that deserves modelling, not a formula.</p>
+  <h3>Designing for resilience</h3>
+  <ul>
+    <li><strong>A liquidity buffer</strong>, commonly 12–24 months of planned withdrawals in cash or short-duration assets, drawn in downturn years so growth assets get time to recover. It does not remove risk; it removes <em>forced selling</em>.</li>
+    <li><strong>Flexible withdrawals</strong> — plans that trim discretionary spending in poor years dramatically outlast rigid inflation-linked withdrawals.</li>
+    <li><strong>Guaranteed-income layers</strong> — securing essential spending through DB income, the state pension and potentially an annuity (Chapter 8) frees the invested remainder to take productive long-term risk.</li>
+    <li><strong>A written policy</strong> — the rate, the buffer, the trim rule, agreed in calm markets. Chapter 12 shows what happens to plans that live in someone's head.</li>
+  </ul>
+  <div class="calc" id="calc-pot">
+    <span class="eyebrow">Interactive Calculator</span>
+    <h3>Retirement Pot Sustainability</h3>
+    <p style="color:#AEBFCF;font-size:.9rem">How long might a pot last, with withdrawals rising each year with inflation?</p>
+    <div class="grid2">
+      <div><label for="ps-pot">Starting retirement pot (£)</label><input type="number" id="ps-pot" value="800000" min="0" step="10000"></div>
+      <div><label for="ps-wd">Year-1 annual withdrawal (£)</label><input type="number" id="ps-wd" value="40000" min="0" step="1000"></div>
+      <div><label for="ps-ret">Assumed annual return (%)</label><input type="number" id="ps-ret" value="5" min="-5" max="12" step="0.5"></div>
+      <div><label for="ps-inf">Assumed annual inflation (%)</label><input type="number" id="ps-inf" value="3" min="0" max="10" step="0.5"></div>
+    </div>
+    <div class="out">
+      <div class="obox"><div class="ov" id="ps-years">~27 years</div><div class="ol" id="ps-lbl">projected duration at these assumptions</div></div>
+      <div class="obox"><div class="ov" id="ps-total">£1.59M</div><div class="ol">total gross withdrawals over the projection</div></div>
+    </div>
+    <p class="fine">Illustration only. Assumes one constant return and inflation rate — real returns vary year to year, and sequence-of-returns risk can materially shorten sustainability if poor years come first. Ignores tax, charges and variable spending. Not financial advice; outcomes may differ materially.</p>
+  </div>
+  <h3>Income vs cash flow — the distinction that changes portfolios</h3>
+  <p>The distinction sounds academic. In practice it reshapes entire portfolios. <strong>Income is money received</strong> — dividends, bond coupons, rent. <strong>Cash flow is money withdrawn</strong>, including the proceeds of selling holdings. A £1,000,000 portfolio growing at 8% from which £80,000 of gains is realised is, pre-tax, no different from one growing at 4% that pays £40,000 in dividends. And depending on circumstances, realised gains can be taxed more gently than income. Relying on "natural yield" alone tends towards concentrated, tax-inefficient portfolios; targeting <strong>total return</strong> — capital growth plus income together, and engineering cash flow deliberately usually serves the goal better. When it comes to paying for retirement, focus on the total return of the portfolio and the cash flow you need, whether it comes from regular income or from selling investments. Chapters 8 and 9 turn that principle into practice.</p>
+  <div class="mini-cta"><p class="mini-cta-text"><strong>Withdrawal rate, buffer size, allocation, trim rules — resilient plans hold a dozen moving parts steady at once.</strong> Seeing yours modelled properly takes one conversation.</p><a class="btn btn-teal" href="https://trustevo.co.uk/arrange-introduction">Arrange an adviser introduction</a></div>
+</section>
+
+<section class="chapter" id="chapter-7">
+  <span class="eyebrow">Chapter 07 · The Run-Up</span>
+  <h2>The Final Working Years</h2>
+  <p class="lede">The last five to ten working years are usually peak earning years, and the years when pension rules turn most technical. Three allowances, one taper, one tripwire and one 2029 change decide how efficiently the final phase of funding lands.</p>
+  <div class="tbl-scroll"><table>
+    <tr><th>Allowance / threshold — 2026/27</th><th>Amount</th><th>Notes</th></tr>
+    <tr><td>Standard annual allowance</td><td>£60,000</td><td>Or relevant earnings if lower; employee + employer + sacrificed contributions all count</td></tr>
+    <tr><td>Taper — threshold income</td><td>£200,000</td><td>Taper testing begins above this</td></tr>
+    <tr><td>Taper — adjusted income</td><td>£260,000</td><td>Allowance falls £1 per £2 above; minimum £10,000 at £360,000+</td></tr>
+    <tr><td>Money Purchase Annual Allowance</td><td>£10,000</td><td>Once taxable DC income is flexibly accessed, usually permanent</td></tr>
+    <tr><td>Carry forward</td><td>3 prior years</td><td>Unused allowance, where scheme membership existed in those years</td></tr>
+    <tr><td>Lump Sum Allowance / LSDBA</td><td>£268,275 / £1,073,100</td><td>Caps tax-free lump sums in life and on death (replaced the LTA)</td></tr>
+  </table></div>
+  <h3>The taper, a high-earner blind spot</h3>
+  <p>Higher earners routinely assume the full £60,000 is available. Where adjusted income — income <em>plus</em> employer contributions — exceeds £260,000, it may not be. A director on £200,000 salary with £100,000 of dividends and £60,000 of total contributions can find the allowance tapered to £30,000, with the excess exposed to an annual-allowance charge. Model adjusted income precisely, before contributing, every year it might bite.</p>
+  <h3>Carry forward — the spike-year lever</h3>
+  <p>Unused allowance from the three previous tax years can often be added to this year's — powerful in bonus years, business-sale years, or a deliberate final push. The conditions are technical (scheme membership in the earlier years, sufficient current earnings for personal contributions, precise records), which is exactly why it is under-used and worth professional hands.</p>
+  <div class="warn"><h4>The MPAA tripwire</h4>
+  <p style="margin:0">Take taxable income flexibly from a DC pension — anything beyond tax-free cash, and future DC funding capacity typically drops to £10,000 a year, permanently, with carry forward curtailed. For anyone phasing into retirement while still earning, one casual withdrawal can cancel years of planned contributions. Decide the access route <em>before</em> touching the pot.</p></div>
+  <h3>April 2029 — the salary-sacrifice cap</h3>
+  <p>From 6 April 2029, salary-sacrificed pension contributions above £2,000 a year are due to lose their National Insurance exemption; direct employer contributions outside sacrifice arrangements are unaffected. Two implications for the run-up: those with capacity may find the pre-2029 window relevant for sacrifice-heavy funding, and after 2029 the relative efficiency of employer contributions versus sacrifice — historically near-equivalent — diverges, making the structure of late-career funding a live conversation with employers. The practical impact depends on how each employer currently passes NI savings through.</p>
+</section>
+
+<section class="chapter" id="chapter-8">
+  <span class="eyebrow">Chapter 08 · The Toolkit</span>
+  <h2>The Vehicle Room — Every Wrapper, Every Income Source</h2>
+  <figure class="life side"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=70" alt="Hands potting plants in a sunlit greenhouse" loading="lazy"><figcaption>Ten vehicles, one garden. What flourishes depends on where each one is planted.</figcaption></figure>
+  <p class="lede">A wrapper is not the investment. It is the legal and tax container the investment lives in, and in retirement, the container often decides the net outcome as much as the contents. Here is the full room: what each vehicle is, how it is taxed, and where it earns its place. Chapter 9 then shows how they work together.</p>
+
+  <h3>1 · ISAs — the flexibility reserve</h3>
+  <p>Save or invest £20,000 a year (2026/27) with no UK tax on growth and none on the way out. Crucially, ISA withdrawals are not "income" for tax purposes: unlimited amounts can be drawn without touching a tax band, which makes ISAs the retirement plan's pressure valve, covering heavy-tax years, one-off costs and the bridge before pension access. From April 2027 the cash-ISA portion falls to £12,000 for most under-65s (over-65s keep £20,000, and existing balances are untouched) — making capacity already built more valuable, not less. Variants worth knowing: <strong>stocks &amp; shares</strong> (funds, shares, bonds), <strong>cash</strong>, <strong>Lifetime ISA</strong> (to £4,000 within the overall limit, 25% government bonus, age and usage rules), and <strong>Junior ISA</strong> (£9,000 per child, separate allowance, a family-planning tool, Chapter 11). The compounding gap is not cosmetic: £20,000 a year for 20 years at 6% is roughly <strong>£780,000 inside an ISA versus about £700,000</strong> outside one after typical tax drag — same investor, same investments, different container.</p>
+
+  <h3>2 · General investment accounts, unit trusts &amp; OEICs</h3>
+  <p>A GIA is a portfolio without a wrapper — the workhorse once ISA and pension allowances are full, and the natural home of unit trusts and OEICs (open-ended pooled funds; trusts issue "units", OEICs issue shares, the investor experience is near-identical). Taxation is line by line: <strong>dividends</strong> at 10.75% / 35.75% / 39.35% above the £500 allowance; <strong>interest</strong> from bond funds at income rates above the personal savings allowance; <strong>gains</strong> at 18% or 24% above the £3,000 annual exempt amount. Two technical points that catch even careful investors: accumulation units are taxable on income the fund keeps, and the 30-day share-matching rule constrains selling and instantly rebuying to bank a gain. Done properly, disciplined <strong>CGT harvesting</strong> — realising gains up to the exempt amount every year to reset cost bases — quietly converts future taxable gains into banked tax-free ones, £3,000 per person per year. A couple can shelter £6,000 of gains annually this way, which is exactly how the GIA earns its slot in Chapter 9's drawdown order.</p>
+
+  <h3>3 · Pensions — the engine, restated</h3>
+  <p>Tax relief on the way in at marginal rates, tax-free compounding inside, 25% tax-free on the way out (within the £268,275 allowance), taxable income thereafter — and, from April 2027, inclusion of unused funds in the estate. The pension remains the most powerful accumulation vehicle in UK planning; what has changed is its <em>end-of-life</em> role, which Chapters 9, 11 and 15 re-price. Access from 55 (57 from 2028); beware the MPAA on first taxable access (Chapter 7).</p>
+
+  <h3>4 · Investment bonds — onshore and offshore</h3>
+  <p>Life-assurance wrappers holding investments under the "chargeable event" regime rather than year-by-year taxation. The signature feature: <strong>up to 5% of the original investment can be withdrawn each year — cumulatively for 20 years, with no immediate tax liability</strong>, tax being deferred to a later chargeable event (full surrender, death, or excess withdrawals). <strong>Onshore</strong> bonds are treated as having paid basic-rate tax internally; <strong>offshore</strong> bonds enjoy gross roll-up with everything deferred, then taxed at the holder's marginal rate with top-slicing relief. Where they earn a place: retirees expecting lower tax bands later; ISA and pension allowances full; large lump sums (inheritance, business sale) needing tax-managed deployment; and — frequently — inside trusts for estate planning, where bonds pair naturally with the loan trusts and discounted gift trusts in Chapter 11. Segments can even be assigned to a lower-taxed spouse or adult child, moving the eventual tax point to their rates. The price of all this is genuine complexity: chargeable-event maths and timing are adviser territory, not DIY territory.</p>
+
+  <h3>5 · Venture Capital Trusts</h3>
+  <p>Listed companies investing in early-stage UK businesses, carrying a deliberate tax package: <strong>20% upfront income-tax relief</strong> on new subscriptions (reduced from 30% from April 2026) up to £200,000 a year, <strong>tax-free dividends</strong>, and tax-free gains, with relief clawed back if sold within five years. As dividend tax rates have risen, the tax-free dividend stream has become the more valuable half of the package even as upfront relief fell. The reliefs exist because the risk is real: small, illiquid, early-stage companies. VCTs sit at the edge of a plan — considered only once the pension/ISA/GIA core is in place, and only with genuine appetite for the risk.</p>
+
+  <h3>6 · EIS and SEIS</h3>
+  <p>Direct investment into qualifying small companies, with a richer package still: 30% income-tax relief (up to £1m a year, £2m for knowledge-intensive companies), <strong>CGT deferral</strong> on gains reinvested, CGT-free disposal after three years, and loss relief against income or gains that softens the downside. SEIS covers the earliest-stage companies at 50% relief on up to £200,000, with risk to match. Both interact with estate planning through Business Relief — now subject to the £2.5m 100%-relief cap from April 2026, and both are unambiguously specialist: high risk, illiquid, suitability-driven.</p>
+
+  <h3>7 · Annuities — insurance against your own longevity</h3>
+  <p>A premium buys guaranteed income for life. That is genuine insurance against outliving money, and rising rates have brought the question back to the table after a decade away. The trade-offs are equally genuine: capital is usually surrendered, inflation-linking costs meaningfully, and product shapes vary widely (single or joint life, level or escalating, guarantee periods). In reality annuities are complex insurance contracts that do not always provide the simple safety they promise — high costs and restrictions can offset the appeal, and the modern framing is rarely all-or-nothing: some households price guaranteed cover for <em>essential</em> spending only, and invest the rest. Whether, when and how much is a squarely regulated, personal decision an adviser models; no guide should answer it for you.</p>
+
+  <h3>8 · Property and REITs</h3>
+  <p>Direct rental property provides income with concentration, illiquidity, management burden — and, from April 2027, a top tax rate on property income reaching 47%. Mortgage-interest relief restrictions add drag for geared landlords, and disposals face CGT at 18/24%. REITs offer the property exposure without the tenants: pooled, listed vehicles required to distribute 90% of rental profits, tax-advantaged at company level, liquid, and equity-volatile, with the structural quirk that forced distribution limits reinvestment and growth. For landlords approaching retirement, the honest questions are incorporation, disposal timing, and how rental profit layers against other income (Chapter 4). Each one adviser-sized.</p>
+
+  <h3>9 · Cash, Premium Bonds and the reserve tier</h3>
+  <p>Cash is the buffer (Chapter 6) and the shock absorber, commonly 12–24 months of withdrawals, plus known one-off costs. Beyond that tier it is a wasting asset: at 3% inflation, cash earning 3.5% grows 0.5% in real terms <em>before</em> tax, and an additional-rate taxpayer has no personal savings allowance at all. Premium Bonds (to £50,000 per person) offer tax-free prizes and capital preservation for part of the reserve. The discipline: hold enough cash to sleep, then make every further pound work inside a wrapper.</p>
+
+  <h3>10 · Trusts and family investment companies — the transfer vehicles</h3>
+  <p>Not income vehicles but ownership structures: bare trusts, discretionary trusts, loan trusts and discounted gift trusts move assets, control and growth between generations, while family investment companies do similar work in corporate form at larger scale. They belong to the estate conversation, so Chapter 11 gives them their full treatment — flagged here because in a coordinated plan they are the container the <em>other</em> containers eventually pour into.</p>
+
+  <div class="note"><h4>The point of the room</h4><p style="margin:0">None of these vehicles is "best". Each exists for a different job, risk level and moment. Two investors can hold identical funds and keep materially different amounts purely because of the containers, and the sequencing between them. Which is Chapter 9.</p></div>
+  <div class="mini-cta"><p class="mini-cta-text"><strong>Ten vehicles, forty interactions.</strong> Which combination fits your position is exactly what a first planning conversation establishes.</p><a class="btn btn-teal" href="https://trustevo.co.uk/arrange-introduction">Arrange an adviser introduction</a></div>
+</section>
+
+<section class="chapter" id="chapter-9">
+  <span class="eyebrow">Chapter 09 · Putting It Together</span>
+  <h2>The Multi-Vehicle Playbook</h2>
+  <p class="lede">If you are drawing only from a pension, everything beyond the tax-free element is taxed as income, so the task is to complement taxable income with tax-free and tax-deferred income, giving yourself room to manage the tax position year by year. Here is how the vehicles are commonly layered, walked through phase by phase. Educational walk-through, not a recommendation: the right order is personal.</p>
+  <h3>Phase 0, the building decade: blended accumulation</h3>
+  <p>The drawdown order only exists if the wrappers were filled in the first place. In the final ten to fifteen working years, most households face the same recurring question: where should the next spare pound go? The honest answer depends on your tax band, your bridge needs and your horizon, but the logic runs in a recognisable sequence.</p>
+  <div class="tbl-scroll"><table>
+    <tr><th>Priority</th><th>Where the next pound commonly goes</th><th>Why it earns its slot</th></tr>
+    <tr><td>1</td><td>Workplace pension, at least to the full employer match</td><td>Matched contributions are an immediate uplift no other vehicle offers</td></tr>
+    <tr><td>2</td><td>Further pension funding (sacrifice or SIPP), sized to your marginal rate</td><td>Relief at 40–45% for higher earners, and effectively around 60% on income inside the £100,000–£125,140 taper; the 2029 sacrifice cap makes the pre-2029 window relevant for heavy funders</td></tr>
+    <tr><td>3</td><td>Stocks &amp; shares ISA, up to £20,000 each</td><td>No relief going in, but tax-free forever coming out, and it is the bridge asset for retiring before pension access age</td></tr>
+    <tr><td>4</td><td>Partner's allowances: their pension, their ISA</td><td>Two of everything. A couple that fills both sets of wrappers retires with double the tax-free capacity of one that fills only the higher earner's</td></tr>
+    <tr><td>5</td><td>GIA, harvested annually within the £3,000 CGT exemption</td><td>The overflow reservoir once wrappers are full, kept efficient by disciplined gain-harvesting</td></tr>
+    <tr><td>6</td><td>Investment bond, onshore or offshore</td><td>For large surpluses and lump sums: tax-deferred growth, the 5% withdrawal allowance, and a natural pairing with later estate planning</td></tr>
+  </table></div>
+  <p>The sequence bends with circumstances, and that is the point. A 52-year-old planning to stop at 55 needs a heavier ISA and GIA weighting than the pension-first default, because pensions are locked until 57 from 2028. A director controls the salary, dividend and employer-contribution mix and can fund priority 2 from the company. Someone brushing the annual-allowance taper (Chapter 7) may find priorities 3 to 6 doing work the pension no longer can. The households that arrive at retirement with a genuine multi-vehicle drawdown available are, almost without exception, the ones that built this way for a decade beforehand. Blend on the way in, and you earn the right to blend on the way out.</p>
+  <div class="example"><h4>A worked build, ten years out</h4>
+  <p style="margin:0">A couple, 55 and 53, with £45,000 a year of genuine surplus. He earns £110,000; she earns £42,000. One reasonable educational shape: he sacrifices £22,000 into his pension, clearing the £100,000 taper and collecting relief at an effective rate near 60% on the tapered slice; she contributes £8,000 to hers with basic-rate relief; the remaining £15,000 splits between her ISA (prioritised, since she will retire first and bridge two years to pension access) and his. Ten years of that pattern, at the Chapter 6 growth assumptions, arrives at retirement with six separately taxed pots and the full Chapter 9 playbook available. The same £450,000 saved into a single pension would arrive with one pot, one tax treatment, and far fewer moves.</p></div>
+  <h3>The layering logic</h3>
+  <p>Four properties decide each vehicle's slot: <em>is the withdrawal taxable? is it flexible? does the tax point move? and what does it leave in the estate?</em> ISAs come out tax-free. GIAs come out mostly tax-free within managed allowances. Pensions come out 25% tax-free, then taxable, and now carry the 2027 estate question. Investment bonds defer the tax point to a year of your choosing. Line those properties up against the fixed layers from Chapter 4 and a natural order emerges.</p>
+  <div class="example"><h4>A worked walk-through: one retiree, £50,000, four vehicles</h4>
+  <p>A single retiree, before state pension age, needs £50,000. One way the vehicles can combine under 2026/27 rules:</p>
+  <div class="tbl-scroll"><table>
+    <tr><th>Source</th><th>Amount</th><th>Tax treatment</th></tr>
+    <tr><td>ISA withdrawals</td><td>£20,000</td><td>Tax-free — never counts as income</td></tr>
+    <tr><td>Pension drawdown</td><td>£12,570</td><td>Covered by the personal allowance</td></tr>
+    <tr><td>GIA sales</td><td>£3,000</td><td>Within the CGT annual exempt amount</td></tr>
+    <tr><td>Cash interest</td><td>£1,000</td><td>Within the personal savings allowance</td></tr>
+    <tr><td>Offshore bond withdrawal</td><td>£13,430</td><td>Within the 5% allowance — tax deferred, not exempt</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>£50,000</strong></td><td><strong>£0 income tax payable this year</strong></td></tr>
+  </table></div>
+  <p style="margin:0">Drawing the same £50,000 entirely from a pension instead produces <strong>£7,486 of tax</strong> — every single year. The multi-vehicle version is not magic: the bond's tax is deferred rather than cancelled, the ISA and CGT capacity are finite, and sustaining the pattern takes years of prior wrapper-filling. But it shows the size of the lever, and why the mix is built long before retirement. A couple doubles most of these allowances.</p></div>
+  <h3>The three phases, walked through</h3>
+  <p><strong>Phase 1 — early retirement (to state pension age).</strong> Fixed taxable income is at its lowest, so this is the phase for tax-free and tax-efficient sources: ISA withdrawals as the backbone, GIA gains harvested within exempt amounts, cash interest inside savings allowances, tax-free pension cash deployed strategically (clearing debt, funding one-offs), and bond 5% withdrawals where held — while pension drawdown is either deferred or, per Chapter 5, deliberately sized to fill the allowance and basic band. The pension keeps compounding; taxable income stays controlled.</p>
+  <p><strong>Phase 2 — mid-retirement (state pension in payment).</strong> The state pension now consumes the allowance automatically. The pattern shifts: taxable pension withdrawals are introduced in <em>measured</em> amounts, enough to spread the pot's tax over many years, never enough to breach the higher-rate threshold — while ISAs and remaining GIA capacity top up spending without adding taxable income. This is where the Chapter 4 layering discipline earns its keep annually.</p>
+  <p><strong>Phase 3 — later retirement.</strong> ISAs and GIAs have carried the early load, so pensions naturally carry more — withdrawals still steered under the higher-rate line, ISA remnants reserved for exactly that steering. Where investment bonds are held, encashment often lands here, in years when other income (and therefore the marginal rate on the gain) is lowest. And from 2027, phase 3 has a second objective running alongside income: managing what the pension will be worth <em>to the estate</em> — the calculus Chapter 15 prices in full.</p>
+  <div class="note"><h4>Three ways to take pension money, and why the choice matters</h4>
+  <p style="margin:0">Even within the pension itself there are three drawdown shapes, and most people only ever hear about the first. <strong>Tax-free cash first:</strong> crystallise the pot, take up to 25% as one lump sum, draw taxable income from the rest thereafter. Simple, and popular, but it lands the entire tax-free entitlement in one year whether or not it is needed. <strong>Phased drawdown:</strong> crystallise the pot in slices over many years, releasing a small piece of tax-free cash alongside each piece of taxable income. This is the shape behind the Phase 2 pattern above, spreading both the tax-free element and the taxable income across the bands of a whole retirement. <strong>UFPLS:</strong> take uncrystallised lump sums where each withdrawal is automatically 25% tax-free and 75% taxable, with no separate crystallisation step. Each shape produces a different taxable-income profile, a different MPAA position and, from 2027, a different estate trajectory. One practical footnote for all three: providers commonly apply an emergency tax code to a first taxable withdrawal, over-deducting tax that must then be reclaimed from HMRC, another reason the first withdrawal deserves planning rather than improvisation. Which shape fits is a regulated, personal question, and one worth asking before the money moves.</p></div>
+  <h3>Total-return vs income investing — the strategic choice underneath</h3>
+  <div class="tbl-scroll"><table>
+    <tr><th></th><th>Income investing</th><th>Total-return investing</th></tr>
+    <tr><td>Typical mix</td><td>Concentrated in high-dividend shares and bonds</td><td>Diversified growth assets plus deliberate withdrawals</td></tr>
+    <tr><td>Cash flow</td><td>Whatever the yield delivers, even when it exceeds need</td><td>Chosen each year, from whichever source suits</td></tr>
+    <tr><td>Tax character</td><td>Taxable income arrives regardless</td><td>Gains realised when and where the tax position suits</td></tr>
+    <tr><td>Risks</td><td>Concentration; dividend cuts; yield-chasing</td><td>Requires discipline and a selling framework</td></tr>
+  </table></div>
+  <p>Rising dividend and savings taxes have tilted this comparison decisively: locked-in taxable income has become more expensive exactly as flexible, gain-based cash flow has become relatively cheaper. The flexibility to decide <em>where this year's income comes from</em> is now one of the most valuable levers in retirement planning, and it only exists if the vehicles were filled, located and sequenced deliberately.</p>
+  <div class="mini-cta"><p class="mini-cta-text"><strong>This walk-through used one illustrative retiree.</strong> Yours has different pots, different phases and a different order — mapping it is precisely what a complimentary planning conversation does.</p><a class="btn btn-teal" href="https://trustevo.co.uk/arrange-introduction">Arrange an adviser introduction</a></div>
+</section>
+
+<section class="chapter" id="chapter-10">
+  <span class="eyebrow">Chapter 10 · The Compounding of Good Decisions</span>
+  <h2>What Coordination Is Worth</h2>
+  <figure class="life side"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1100&q=70" alt="A planning notebook, pen and laptop on a tidy desk" loading="lazy"><figcaption>None of the five gaps in this chapter requires brilliance. All five require someone to run the numbers each year.</figcaption></figure>
+  <p class="lede">Everything so far describes decisions. This chapter prices them. Five areas — costs, rebalancing, behaviour, modelling and asset location, where the gap between coordinated and uncoordinated is measurable in six figures over a retirement. The numbers below are illustrations, each built on stated assumptions; every one of them is the kind of calculation a planning review runs on your actual figures.</p>
+  <h3>1 · Costs — the quiet compounder</h3>
+  <div class="tbl-scroll"><table>
+    <tr><th>Amount invested</th><th>Horizon</th><th>Gross return</th><th>Annual costs</th><th>End value</th></tr>
+    <tr><td>£1,000,000</td><td>20 years</td><td>10%</td><td>2.4%</td><td>£4,138,568</td></tr>
+    <tr><td>£1,000,000</td><td>20 years</td><td>10%</td><td>1.5%</td><td>£4,972,540</td></tr>
+  </table></div>
+  <p>Identical portfolios, identical returns, £834,000 apart, from a 0.9% fee difference, compounded. Hypothetical illustration (fees assessed at each year end, no transaction costs, returns not guaranteed), but the mechanism is not hypothetical. It is why consolidating scattered pots matters: a saver holding five historic pensions averaging 1.39% in charges who restructures to a 0.35% platform changes a £400,000 pot's 15-year trajectory at 6% gross from roughly <strong>£786,000 to £912,000, about £126,000 from paperwork</strong>, no extra risk, no extra contributions. When did you last total what all your pots actually charge?</p>
+  <h3>2 · Rebalancing — risk control you can price</h3>
+  <div class="example"><h4>Two investors, one market cycle</h4>
+  <p>Both start with £500,000 at 60/40 (£300,000 equities, £200,000 bonds). A strong bull market lifts equities 50% and bonds 5%: both portfolios reach £660,000, but the mix has drifted to 69/31. Investor A rebalances back to 60/40 (£396,000 / £264,000); Investor B lets it ride (£450,000 / £210,000).</p>
+  <p style="margin:0">Then equities fall 30% while bonds gain 5%. Investor A finishes at <strong>£554,400</strong>; Investor B at <strong>£535,500</strong>. <strong>£18,900 of difference from one act of discipline</strong> — before counting that B now also holds a larger, more heavily-taxed income-producing equity book under the new dividend rates. Portfolios drift towards whatever just performed; rebalancing is the standing correction, and it works precisely because it feels wrong in the moment.</p></div>
+  <h3>3 · Behaviour — the largest line item</h3>
+  <p>The costliest retirement losses rarely come from markets; they come from reactions to markets. Take a £500,000 balanced portfolio through a 30% fall to £350,000. The investor who sells into cash crystallises the loss permanently, and under current rules parks the proceeds where interest is taxed at raised rates inside shrinking cash-ISA capacity. The investor who stays, and rebalances at the lows, participates in the recovery: a 65% rebound rebuilds the portfolio to about <strong>£577,500, a £227,500 gap in a single cycle</strong>, produced entirely by behaviour. Every major crisis on record — 2001, 2008, 2020 — was followed by substantial recovery; the pattern that damages retirements is selling too early, sitting in cash too long, then buying back too late. Repeated across the several cycles a 30-year retirement contains, the gap between disciplined and emotional compounds into seven figures. The most reliably documented value of ongoing advice is not product selection. It is having a counterparty with a plan at exactly the moments these decisions get made.</p>
+  <h3>4 · Cash-flow modelling — seeing fiscal drag before it bites</h3>
+  <p>With thresholds frozen to 2031, a retiree whose withdrawals merely track inflation drifts upward through the bands while standing still in real terms. Model a £50,000 taxable pension income rising 3% a year for 20 years: against today's frozen bands it pays roughly <strong>£85,000 more cumulative tax</strong> than the identical income would if thresholds rose with inflation — tax created purely by the freeze, invisible in any single year, obvious across the plan. Cash-flow modelling exists to surface exactly this: how long the money lasts, when each band gets breached, and which sequencing choices (Chapters 5 and 9) blunt the drag. Small policy settings compound dramatically over a long retirement; modelling is how you see them coming.</p>
+  <h3>5 · Asset location — repeated because it pays annually</h3>
+  <p>£300,000 of dividend equities yielding 4% produces £12,000 a year: inside an ISA, kept in full; outside, a higher-rate taxpayer loses over £4,100 of it, every year, at 35.75%. Bond interest outside wrappers now loses more at raised savings rates; growth assets tolerate a GIA best under harvested gains. One repositioning decision, correctly made, pays for itself annually for the rest of the plan, and the shrinking of allowances has raised the price of getting it wrong. Chapter 8's room only works when the furniture is in the right places.</p>
+  <div class="note"><h4>The honest summary</h4><p style="margin:0">Costs, drift, behaviour, drag and location are five separate, compounding gaps. None requires brilliance; all require coordination, discipline and someone actually running the numbers each year. That, not stock-picking — is what professional planning is for. Weigh any fee against the size of the gaps it closes.</p></div>
+  <div class="mini-cta"><p class="mini-cta-text"><strong>Want these five calculations run on your actual numbers?</strong> That is a standard first piece of work in a planning review.</p><a class="btn btn-teal" href="https://trustevo.co.uk/arrange-introduction">Arrange an adviser introduction</a></div>
+</section>
+
+<section class="chapter" id="chapter-11">
+  <span class="eyebrow">Chapter 11 · Passing It On</span>
+  <h2>Estate, Inheritance Tax &amp; the 2027 Pension Change</h2>
+  <p class="lede">Inheritance tax has quietly become a mainstream retirement concern. Receipts have roughly doubled since 2009; nil-rate bands are frozen to 2031 while assets grow; and from April 2027 pensions: the one great exception — join the estate. Estate planning is no longer an appendix to the retirement plan. It is a load-bearing chapter of it.</p>
+  <div class="chartbox">
+    <div class="chart-h">Five dates that reshape estate and retirement planning</div>
+    <svg viewBox="0 0 660 170" role="img" aria-label="Timeline: April 2026 Business Relief cap; April 2027 pensions enter the IHT estate and cash ISA limits change; April 2028 pension access age 57; April 2029 salary sacrifice NI cap; 2031 threshold freezes scheduled to end.">
+      <line x1="40" y1="60" x2="620" y2="60" stroke="#E2E8F0" stroke-width="2"/>
+      <circle cx="70" cy="60" r="7" fill="#C9A961"/><circle cx="195" cy="60" r="9" fill="#13C29B"/><circle cx="330" cy="60" r="7" fill="#C9A961"/><circle cx="465" cy="60" r="7" fill="#C9A961"/><circle cx="590" cy="60" r="7" fill="#0B1D3A"/>
+      <text x="70" y="40" text-anchor="middle" class="ax" style="font-weight:800;fill:#0B1D3A">Apr 2026</text>
+      <text x="195" y="36" text-anchor="middle" class="ax" style="font-weight:800;fill:#0E8B70">Apr 2027</text>
+      <text x="330" y="40" text-anchor="middle" class="ax" style="font-weight:800;fill:#0B1D3A">Apr 2028</text>
+      <text x="465" y="40" text-anchor="middle" class="ax" style="font-weight:800;fill:#0B1D3A">Apr 2029</text>
+      <text x="590" y="40" text-anchor="middle" class="ax" style="font-weight:800;fill:#0B1D3A">2031</text>
+      <text x="70" y="86" text-anchor="middle" class="ax">Business Relief</text><text x="70" y="100" text-anchor="middle" class="ax">capped at £2.5m</text>
+      <text x="195" y="86" text-anchor="middle" class="ax" style="fill:#0E8B70;font-weight:700">Pensions enter</text><text x="195" y="100" text-anchor="middle" class="ax" style="fill:#0E8B70;font-weight:700">the IHT estate</text><text x="195" y="114" text-anchor="middle" class="ax">cash ISA £12k &lt;65s</text>
+      <text x="330" y="86" text-anchor="middle" class="ax">Pension access</text><text x="330" y="100" text-anchor="middle" class="ax">age rises to 57</text>
+      <text x="465" y="86" text-anchor="middle" class="ax">Salary-sacrifice</text><text x="465" y="100" text-anchor="middle" class="ax">NI cap, £2,000/yr</text>
+      <text x="590" y="86" text-anchor="middle" class="ax">Threshold freezes</text><text x="590" y="100" text-anchor="middle" class="ax">scheduled to end</text>
+    </svg>
+  </div>
+  <h3>The fundamentals — 2026/27</h3>
+  <div class="tbl-scroll"><table>
+    <tr><th>Allowance</th><th>Amount</th><th>Notes</th></tr>
+    <tr><td>Nil-rate band (NRB)</td><td>£325,000</td><td>Per person; unchanged since 2009, frozen until April 2031</td></tr>
+    <tr><td>Residence nil-rate band (RNRB)</td><td>£175,000</td><td>Main residence to direct descendants; tapers £1 per £2 above £2m estates</td></tr>
+    <tr><td>Combined, per couple</td><td>Up to £1,000,000</td><td>Unused allowances transfer between spouses / civil partners</td></tr>
+    <tr><td>Standard rate</td><td>40%</td><td>On value above available bands · 36% where 10%+ of the net estate goes to charity</td></tr>
+  </table></div>
+  <p>Note the RNRB taper: estates over £2m lose the residence band progressively — many property-rich households assume an allowance the taper quietly removed years ago.</p>
+  <h3>6 April 2027 — pensions enter the estate</h3>
+  <p>From 6 April 2027, unused defined-contribution funds and most lump-sum death benefits are expected to fall within the estate for IHT, with executors responsible for valuing pension wealth and settling the tax. What stays outside matters as much: <strong>spousal and civil-partner transfers remain exempt</strong>, death-in-service benefits from registered schemes are excluded, and charitable transfers stay exempt. Rules reflect draft legislation and may be refined before Royal Assent.</p>
+  <div class="warn"><h4>Why inherited pensions can face up to ~67%</h4>
+  <p>Pensions are tax-deferred savings: relief on the way in, income tax on the way out, including for a beneficiary, where the original holder died after 75. From April 2027 a second layer can stack:</p>
+  <ul><li><strong>Layer 1:</strong> 40% IHT on pension value above available nil-rate bands (after any spousal exemption)</li>
+  <li><strong>Layer 2:</strong> the beneficiary's marginal income tax on drawdown — only where death occurred after 75</li></ul>
+  <p style="margin:0">For an additional-rate beneficiary the combined effect can reach roughly 67%; around 64% higher-rate; around 52% basic-rate. Before 75, only the IHT layer applies, and within available bands the rate is zero. The worst case is real but specific; the calculator shows the range.</p></div>
+  <div class="calc" id="calc-iht">
+    <span class="eyebrow">Interactive Calculator</span>
+    <h3>IHT on an Inherited Pension (April 2027+)</h3>
+    <p style="color:#AEBFCF;font-size:.9rem">Illustrates the combined effect on pension value sitting <em>above</em> available nil-rate bands.</p>
+    <div class="grid2">
+      <div><label for="ih-pot">Unused pension at death (£)</label><input type="number" id="ih-pot" value="500000" min="0" step="10000"></div>
+      <div><label for="ih-age">Age of pension holder at death</label><select id="ih-age"><option value="after" selected>After 75 (beneficiary pays income tax)</option><option value="before">Before 75 (no income-tax layer)</option></select></div>
+      <div><label for="ih-band">Beneficiary's marginal income-tax rate</label><select id="ih-band"><option value="0.20">Basic rate (20%)</option><option value="0.40">Higher rate (40%)</option><option value="0.45" selected>Additional rate (45%)</option></select></div>
+    </div>
+    <div class="out">
+      <div class="obox"><div class="ov" id="ih-rate">67%</div><div class="ol" id="ih-rl">40% IHT + 45% income tax on drawdown compound to 67%</div></div>
+      <div class="obox"><div class="ov" id="ih-net">£165,000</div><div class="ol" id="ih-nl">reaching the beneficiary · £335,000 to combined tax on £500,000</div></div>
+    </div>
+    <p class="fine">Worst-case illustration: assumes the full pension sits above available nil-rate bands (the first £325k–£500k per person is typically sheltered, and spousal transfers remain exempt) and, where selected, full drawdown at the chosen marginal rate. Based on draft legislation effective 6 April 2027 — rules may change before Royal Assent. Not tax, estate or financial advice.</p>
+  </div>
+  <h3>What the 2027 change puts on the table</h3>
+  <ul>
+    <li><strong>Beneficiary nominations.</strong> Pensions pass outside the will: one expression-of-wish form directs them. Post-2027, an out-of-date nomination is an estate-planning failure that costs nothing to fix.</li>
+    <li><strong>Drawdown sequencing.</strong> "Pension last" was built on pre-2027 logic. Chapters 5, 9 and 15 show how drawing pension earlier can shrink the eventual estate exposure, sometimes at the price of modestly more lifetime income tax. A trade to model, never to assume.</li>
+    <li><strong>Liquidity for the bill.</strong> IHT falls due in months; pensions and property do not always. Life cover in trust (below) is one route to a fast, estate-free payout that meets the bill without forced sales.</li>
+  </ul>
+  <h3>Business Relief and Agricultural Relief: the April 2026 reset</h3>
+  <p>For decades, qualifying business and agricultural assets could pass entirely free of inheritance tax under 100% Business Relief and Agricultural Relief. From 6 April 2026 that changes shape. Full relief is capped at <strong>£2.5 million of qualifying assets per person</strong>, a threshold originally announced at £1 million and raised to £2.5 million in December 2025 before commencement; value above the cap receives 50% relief, an effective 20% charge. Qualifying AIM-listed shares move to 50% relief regardless of amount or holding period, and EIS-type holdings that once reached full relief after two years follow the same 50% treatment. The allowance refreshes every seven years for individuals, in the way the nil-rate band does, and unused allowance can pass to a surviving spouse or civil partner, giving couples scope for up to £5 million of fully relieved qualifying assets on second death. It is applied to lifetime transfers chronologically, so the order in which assets move now matters alongside the amounts.</p>
+  <div class="tbl-scroll"><table>
+    <tr><th>Aspect</th><th>Before April 2026</th><th>From April 2026</th></tr>
+    <tr><td>100% BR / APR</td><td>Unlimited on qualifying assets</td><td>Capped at £2.5m per person</td></tr>
+    <tr><td>Value above the cap</td><td>Fully relieved</td><td>50% relief, an effective 20% IHT rate</td></tr>
+    <tr><td>Qualifying AIM shares</td><td>100% after two years</td><td>50%, regardless of amount held</td></tr>
+    <tr><td>Between spouses</td><td>Relief effectively unlimited</td><td>Unused allowance can pass to the survivor: up to £5m fully relieved per couple on second death</td></tr>
+    <tr><td>Allowance renewal</td><td>N/A</td><td>Refreshes every 7 years for individuals (10 for relevant trusts)</td></tr>
+    <tr><td>Planning character</td><td>Simple: qualify and hold</td><td>Tracking, sequencing and diversification all matter; capped relief must be allocated deliberately</td></tr>
+  </table></div>
+  <p class="src">Reflects the rules as revised in December 2025, ahead of 6 April 2026 commencement. Sources published before December 2025 still quote the original £1 million cap; verify details against final legislation before acting.</p>
+  <div class="example"><h4>Worked illustration: the family business owner</h4>
+  <p>Richard, 68, owns a qualifying trading business worth £4 million and holds £1 million of personal assets. His estate exceeds £2.35 million, so no residence nil-rate band survives the taper.</p>
+  <p><strong>Before April 2026:</strong> the business passes fully relieved. Tax falls only on the personal assets: £1,000,000 less the £325,000 nil-rate band, taxed at 40%, a bill of roughly <strong>£270,000</strong>.</p>
+  <p><strong>From April 2026, with no planning:</strong> the first £2.5 million of the business keeps full relief; the £1.5 million excess is relieved at 50%, putting £750,000 of business value into the taxable estate alongside the £1 million of personal assets. The bill rises to roughly <strong>£570,000</strong>. Same business, same family, £300,000 more tax, purely from the rule change.</p>
+  <p style="margin:0"><strong>What advisers now model for owners like Richard:</strong> how the couple’s combined £5 million of allowance is best used across two estates and two deaths; whether gifting shares into trust should start seven-year clocks on part of the value; whether a loan trust can freeze future growth on the personal capital outside the estate; and whether whole-of-life cover in trust should stand behind whichever liability remains, so the family never has to sell part of the business to pay the bill. Each lever is technical, several interact, and all of them work better started early. That is precisely why this is adviser territory rather than a checklist.</p></div>
+  <h3>Lifetime gifting — the core mechanics</h3>
+  <p><strong>Potentially exempt transfers:</strong> a gift to an individual leaves the estate entirely if you survive seven years, with taper relief on the <em>tax</em> from year three. The clock starts only when the gift is made. <strong>Annual exemptions:</strong> £3,000 per donor (one year's carry-forward), £250 small gifts per recipient, wedding gifts of £5,000 / £2,500 / £1,000 by relationship, unlimited spousal and charitable transfers. <strong>Normal expenditure out of income:</strong> the under-used one — regular gifts from genuine surplus income, leaving your standard of living intact, are exempt <em>immediately</em>, no clock at all. School fees paid by grandparents commonly run through exactly this exemption.</p>
+  <div class="example"><h4>Gifting in practice, an illustrative programme</h4>
+  <p style="margin:0">A 70-year-old with a £2m estate gifts £30,000 a year to his daughter (PETs — exempt on seven-year survival) and £3,000 a year to each of two grandchildren within exemptions. Over ten years, roughly <strong>£360,000 leaves the estate</strong>, at 40%, up to £144,000 of eventual tax removed — while he watches the money matter during his lifetime. The discipline: gift only what the Chapter 6 sustainability maths says is genuinely surplus, and paper every gift for the executors.</p></div>
+  <h3>Trusts — control, protection, timing</h3>
+  <p><strong>Bare trusts</strong> hold assets simply, usually for children, taxed on the child. <strong>Discretionary trusts</strong> give trustees flexibility over who benefits and when, useful where beneficiaries are young, vulnerable, or where divorce and creditor protection matters, at the price of ten-yearly and exit charges. Two structures pair trusts with the Chapter 8 investment bond to solve the classic dilemma of wanting IHT efficiency <em>and</em> access:</p>
+  <div class="example"><h4>Two illustrative structures</h4>
+  <p><strong>Loan trust.</strong> A 68-year-old lends £500,000 to a discretionary trust, which invests it. The loan itself stays in her estate — she can recall it whenever needed, but <strong>all growth accrues outside the estate from day one</strong>: if the trust grows to £750,000, the £250,000 of growth escapes IHT entirely. Access preserved, future growth sheltered.</p>
+  <p style="margin:0"><strong>Discounted gift trust.</strong> A 75-year-old places £500,000 into a DGT and retains fixed payments of £25,000 a year for life. Because of that retained right, a medically-underwritten <strong>discount, say £200,000 — leaves her estate immediately</strong>, with the remainder outside after seven years. Immediate IHT reduction plus a fixed lifetime income: the structure built for exactly the retiree who cannot simply give capital away. Both structures are technical, product-linked and unambiguously advice territory.</p></div>
+  <h3>Whole-of-life cover — insuring the bill itself</h3>
+  <p>Where a liability is predictable, a whole-of-life policy written in trust pays a tax-free sum outside the estate, quickly, precisely when the bill arrives. Illustration: a family expecting a £400,000 IHT liability holds a £400,000 policy in trust; on death the payout meets the bill in weeks, and no asset is sold under pressure. Premiums are lifelong and significant — the tool almost always features alongside gifting and structure, not instead of them.</p>
+  <h3>What the planning gap now looks like</h3>
+  <p>Put the 2026 and 2027 changes together and the cost of doing nothing becomes measurable. Take a couple with a £3.5 million estate that includes £1.2 million of unused pensions, both nil-rate bands available and the residence band tapered away:</p>
+  <div class="tbl-scroll"><table>
+    <tr><th>Scenario</th><th>Estimated IHT liability</th></tr>
+    <tr><td>Under pre-2027 rules (pensions outside the estate)</td><td>£660,000</td></tr>
+    <tr><td>From April 2027, no action taken</td><td>£1,140,000</td></tr>
+    <tr><td>From April 2027, with a coordinated plan in place</td><td>£940,000, illustrative</td></tr>
+  </table></div>
+  <p>The middle row is the default path: the rule change alone adds £480,000 to this family's bill. The third row assumes an entirely ordinary response, a structured gifting programme moving £500,000 out of the estate over time, with trust and liquidity arrangements behind it, and its effectiveness depends on survival periods, structure and circumstances. The point is not the precise figures. It is that between the second and third rows sits a six-figure sum that is decided by whether anyone ever sat down and planned, and that inheritance-tax receipts have roughly doubled since 2009 largely because most families never do.</p>
+  <h3>Wills &amp; LPAs — the documents underneath everything</h3>
+  <p>Die without a valid will and intestacy decides: the surviving spouse takes the statutory legacy (£322,000) plus half the remainder, children take the rest, and an unmarried partner of thirty years takes <strong>nothing</strong>. A well-drafted will sets distribution, executors, guardianship, trust provisions and charitable structure (including the 36% rate); marriage revokes an existing will, and major life events should trigger review. Couples weigh <strong>mirror wills</strong> (simple; exposed to remarriage, creditors and care-cost erosion on the second estate) against <strong>trust wills</strong> that protect capital on first death. Alongside the will sit <strong>Lasting Powers of Attorney</strong> — property &amp; financial affairs, and health &amp; welfare — governing the years rather than the aftermath: without registered LPAs, lost capacity means a 6–12-month Court of Protection process while accounts, including joint ones, can freeze. Registration takes months; an unregistered LPA in a drawer protects nobody. And the modern estate includes digital assets — accounts, records, photographs, which executors can only reach if someone left a map.</p>
+  <div class="mini-cta"><p class="mini-cta-text"><strong>The April 2027 change may invalidate estate assumptions made years ago.</strong> Reviewing nominations, sequencing, gifting and documents against the new rules is the most time-sensitive item in this guide.</p><a class="btn btn-teal" href="https://trustevo.co.uk/arrange-introduction">Arrange an adviser introduction</a></div>
+</section>
+
+<section class="chapter" id="chapter-12">
+  <span class="eyebrow">Chapter 12 · Learning From Others</span>
+  <h2>Ten Costly Retirement Mistakes, and What They Teach</h2>
+  <p class="lede">Most retirement damage is self-inflicted, repeats across generations, and is avoidable once named. These ten are drawn from decades of documented investor behaviour. Avoiding even a handful protects more wealth than most optimisation ever adds.</p>
+  <ol>
+    <li><strong>Placing "big bets".</strong> Few people would go to Monte Carlo, put all their money on the table and take one roll of the dice — the prize might be huge, but the probability isn't worth the pain of losing. Yet investors do exactly this, just less dramatically. The commonest version isn't seen as a bet at all: holding a large slab of retirement savings in an employer's shares. Loyalty and familiarity make it feel safe; it is an investment decision made on emotion. Swissair was so financially admired it was called "the flying bank" — until an acquisition spree met the 2000–02 bear market, its fleet was grounded in October 2001 and the airline closed within months. Enron had $100bn of revenues and was named America's most innovative company six years running; employees watched their shares become worthless almost overnight. Hardly anyone saw either coming, which is the point. The more dramatic version is the hot tip or the "sure thing" IPO, and it fails a three-part test: if you know something, the market almost certainly knows it too and it's already in the price; anything pitched as a sure thing with outsized returns could very well be a scam; and you could simply be wrong. Big bets tempt hardest when you feel behind on retirement savings or when the tipper is someone you respect, and mixing emotion with investing rarely ends well. Note that top executives typically run active diversification plans on their own company's stock. Copy them.</li>
+    <li><strong>Misunderstanding the risk–reward trade-off.</strong> Many retirees want predictable income, protected principal and peace of mind, and some stable, low-returning holdings may genuinely belong in a portfolio. But if long-term growth is needed to reach the goal, investing too cautiously <em>raises</em> the risk of running out (Chapter 6's tables: over 5-year windows equities are more volatile; over 30-year windows they have historically delivered higher returns with comparable or lower variability of outcome). Fixed interest carries its own risks too: default risk — the issuer may not return your principal, and reinvestment risk, where maturing money can only be re-lent at lower rates, shrinking the very income stream you were relying on. And a special warning for lifestyle and target-date funds: they de-risk automatically as a chosen date approaches, dampening short-term volatility while potentially abandoning the long-term growth your plan still requires. A formula keyed to nothing but your retirement date ignores everything that actually matters about your circumstances. Risk is matched to horizon and goal, not to a birthday.</li>
+    <li><strong>Ignoring who holds the money.</strong> Two words: Bernie Madoff. One of the largest financial frauds in history, run for decades on a single structural feature: his firm was both the money manager <em>and</em> the custodian of the funds. Managed accounts are perfectly normal; virtually all Ponzi schemes, however, depend on the manager controlling custody. Check one thing this week: if anyone other than you manages your investments, find out who the custodian is, and prefer an independent, respected third party (a major brokerage or bank), distinct and separate from the decision-maker. Separation won't stop a manager making mistakes; it restricts their ability to transfer and loot your account.</li>
+    <li><strong>Paying excessive fees.</strong> Fees cost you twice: the out-of-pocket charge itself, and the growth that money never earns, and compounding turns "small" into staggering. £1,000,000 invested for 20 years at 10% gross ends at £4,972,540 with 1.5% annual costs, £4,138,568 at 2.4% — <strong>over £830,000 apart</strong> on a 0.9% difference. Annuities deserve particular scrutiny here, with layered ongoing charges and surrender penalties that can reach 10% or more. Add the forgotten workplace pensions still paying legacy charges (Chapter 10's consolidation example) and the fee audit is often the highest-certainty "return" available in the whole plan. You worked too hard for the money to donate six figures to friction.</li>
+    <li><strong>Not planning for inflation's long-term effects.</strong> The mistake retirees make while feeling prudent. From 2000 to 2020 UK inflation averaged only around 2%, and even at that rate, what costs £500,000 today costs nearly £610,000 in ten years, a 22% rise just to stand still. History supplies the warnings: roughly 15% average from 1973 to 1981, above 10% in 2022, and a long-run UK average near 4–5%. Two personal factors sharpen it: your own inflation rate can exceed the headline, and many people spend <em>more</em> in retirement than expected: travel, the house, a second home, helping children and grandchildren. A conservative fixed-interest-only strategy can quietly lock in falling purchasing power for three decades (Chapter 3).</li>
+    <li><strong>Relying on "common knowledge".</strong> Three flavours. <em>Investment clichés:</em> the old rule allocating by age — the older you are, the less in equities — collides with the fact that a 60-year-old today typically has 24 more years to fund, a spouse who may live longer still, and circumstances no formula sees: a vigorous 60-year-old with long-lived parents and one with a serious heart condition should not hold the same portfolio because they share a birthday. <em>Following the herd:</em> equities move on anticipation, so if everyone already has the information that excites you, the advantage is gone — you're late. Individual investors underperform the markets they hold largely by panic-selling near bottoms, buying near peaks, and chasing hot funds and sectors. <em>Taking advice from talking heads:</em> the financial press must publish something dramatic every day and feels obliged to explain every move, yet, as far as anyone can tell, no one consistently keeps track of how well those calls perform. Informed beats loud; be cautious about major decisions made on what you heard this week.</li>
+    <li><strong>Trying to time the market.</strong> Perfect timing is a pursuit with a long history of disappointing its pursuers. Corrections — drops of 10–20% — arrive without warning and can end as fast as they began; bear markets build slowly and rarely announce themselves; even professionals find the distinction hard in real time. And the cost of being wrong is asymmetric, because missing the best days is catastrophic:
+      <div class="tbl-scroll"><table>
+        <tr><th>Missing the best… (of 7,555 trading days, 1993–2022)</th><th>Cumulative return falls to</th><th>Annualised</th></tr>
+        <tr><td>0 days — stayed invested</td><td>559%</td><td>~6.5%</td></tr>
+        <tr><td>10 days (0.13% of days)</td><td>271%</td><td>4.5%</td></tr>
+        <tr><td>20 days</td><td>144%</td><td>3.0%</td></tr>
+        <tr><td>30 days</td><td>73%</td><td>1.9%</td></tr>
+        <tr><td>40 days</td><td>26%</td><td>0.8%</td></tr>
+        <tr><td>50 days (0.66% of days)</td><td>−8%</td><td>−0.3%</td></tr>
+      </table></div>
+      <p class="src">MSCI World Price Index, 31/12/1992–31/12/2022, GBP. Illustration; past performance does not guarantee future results.</p>
+      Ask yourself honestly: are you savvy enough to time all those moves? Do you know anyone who is? Benjamin Graham said it best, in the short run the market is a voting machine; in the long run, a weighing machine. Daily and weekly moves are votes, and their impact is fleeting. Retirements are weighed. For long-term investors, the prudent default is to stay invested unless there are strong, emotion-free reasons to believe a prolonged downturn is in its early stages, a bar that is very rarely cleared.</li>
+    <li><strong>Buying gold or other fear trades.</strong> Look at the long-term facts: US equities annualised around 11.6% and world equities 10.8% over the last half-century, against roughly 7.3% for gold, which also pays nothing while you wait. Gold's marketing runs on fear: imminent collapse, crumbling world order, paper wealth wiped out. The world genuinely faces hard problems. It always has. The last century delivered world war, the rise and fall of communism, near-continuous conflict, terrorism and the Great Recession, and the equity market has continued to rise over time through all of it. So decide which you actually believe is more likely: continued long-term growth, or Armageddon. If truly the latter, gold won't help — buy food and invest in shelter. If the former, own productive assets and let them provide the comfortable retirement.</li>
+    <li><strong>Mismanaging withdrawals, in both directions.</strong> Switching gears from saving to spending is genuinely hard: even people with large nest eggs find deciding how to generate income, and how much to spend, stressful and confusing, a tough proposition with emotional components, which is often a recipe for poor decisions. Withdrawing too much, too early, in down markets can be unrecoverable: fall 20%, withdraw 11% anyway, and you need over a 40% gain just to get back, and two bear-market years of that can dig a hole the late-retirement years leave no time to climb out of. But the opposite is also a real mistake: taking too little out of fear of touching principal cheats you of experiences the plan fully affords. Reducing principal is perfectly fine when the pot is large enough for your lifetime, or your goals simply don't require preserving it, perhaps you'd rather live it up a little. The key is knowing yourself and your goals (Chapter 1), planning on roughly 5% or less as the sustainable default, and protecting the downside if things go badly.</li>
+    <li><strong>Investing with a home-country bias.</strong> Patriotism belongs on the passport, not in the portfolio. The UK is roughly 4% of the world's developed equity markets: an all-UK portfolio ignores 96% of the opportunity set while making a concentrated sector bet — heavy in energy (around 14% of the UK market versus ~5% globally) and financials, and barely exposed to technology, the largest sector in world indices. No single country outperforms all the time; leadership rotates, and this year's winner can easily be next year's laggard. A globally diversified portfolio raises the odds of holding the leaders wherever they emerge, avoids being stranded in a market delivering subpar returns, and — done properly — smooths the ride on the way to the goal.</li>
+  </ol>
+  <div class="note"><h4>The common denominator</h4><p style="margin:0">Every mistake here is an emotional decision in a rational costume: loyalty, fear, thrift, patriotism, impatience. Naming them is half the protection. Having a disciplined counterparty at the moment they get made is the other half.</p></div>
+</section>
+
+<section class="chapter" id="chapter-13">
+  <span class="eyebrow">Chapter 13 · The Later Chapters</span>
+  <h2>Care Costs &amp; Later Life</h2>
+  <p class="lede">Later-life care is among the largest financial variables most retirees will face, and among the least modelled. Residential care commonly runs £40,000–£80,000 a year; nursing and specialist dementia care often exceed that; substantial home care can reach similar levels.</p>
+  <p><strong>Who pays.</strong> State support is means-tested and varies by nation. In England, capital above £23,250 means full self-funding (a legislated lifetime cap has been repeatedly delayed — verify current policy when planning); Scotland provides free personal and nursing care over 65, with accommodation still means-tested; Wales and Northern Ireland run separate regimes. For most readers of this guide, means-testing is academic — self-funding is near-certain, so the planning question is <em>how</em>, not whether.</p>
+  <p><strong>Funding routes.</strong> Drawdown from ISAs, pensions and portfolios, planned for uncertain duration; <strong>immediate-needs annuities</strong>, where a medically-underwritten premium buys guaranteed, tax-free income paid direct to the care provider, removing longevity risk on the covered portion; <strong>equity release</strong> against the home through regulated lifetime mortgages with no-negative-equity guarantees, at the cost of the eventual estate; and family contribution, which interacts with gifting and IHT.</p>
+  <div class="warn"><h4>Deliberate deprivation</h4><p style="margin:0">Gifts made with the intention of avoiding care costs can be treated as if still owned, with no time limit. Gifting during declining health invites challenge; genuine estate planning done early, in good health, is a different matter. The distinction is fact-specific and worth professional care.</p></div>
+  <p>Two closing disciplines: claim <strong>Attendance Allowance</strong> where eligible — modest, non-means-tested, routinely unclaimed, and preserve optionality. Running capital down hard in the joyful early years is exactly what removes choices in the uncertain later ones; a diversified mix of pension, ISA and housing equity is the structural hedge against a cost nobody can schedule.</p>
+</section>
+
+<figure class="life"><img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=1600&q=70" alt="A parent and two young children reading together on a sofa" loading="lazy"><figcaption>The receiving generation. Most wealth transfer questions are, in the end, questions about them.</figcaption></figure>
+
+<section class="chapter" id="chapter-14">
+  <span class="eyebrow">Chapter 14 · The Longer of Two Lives</span>
+  <h2>Survivorship &amp; Legacy</h2>
+  <p class="lede">Retirement plans are usually built for a household. Tax is charged on individuals. The moment one spouse dies, income, allowances and tax position all change at once, and plans that never modelled it leave the survivor exposed.</p>
+  <div class="example"><h4>Widow(er) compression — David and Emma, both 68</h4>
+  <p>Together: £40,000 of DB income (joint-life 50%), two state pensions (~£25,095), £20,000 of DC drawdown — £85,095 of taxable income spread across <em>two</em> personal allowances, comfortably managed.</p>
+  <p style="margin:0">On David's death: the DB halves to £20,000 and one state pension ceases. If Emma continues the same £20,000 drawdown, £52,547 of income now presses against a <em>single</em> allowance — higher-rate exposure appears where none existed, on reduced income, at the worst possible moment. Sequencing decisions made a decade earlier decide how sharp this cliff is.</p></div>
+  <h3>The survivorship checklist</h3>
+  <ul>
+    <li><strong>Know what continues automatically:</strong> DB survivor percentages, annuity guarantee periods, joint-life elections — set at purchase, unchangeable later.</li>
+    <li><strong>Use the spousal exemptions deliberately:</strong> assets and unused nil-rate bands pass between spouses free of IHT — first-death planning is usually about structure, second-death planning about tax.</li>
+    <li><strong>Keep both partners fluent:</strong> the most common survivorship failure is informational. One page: what exists, where, who to call — is worth more to a grieving spouse than any optimisation.</li>
+    <li><strong>Simplify with age:</strong> consolidating fragments and documenting intent is a gift to the survivor and the executors alike.</li>
+  </ul>
+  <h3>Legacy, deliberately</h3>
+  <p>Legacy is the estate chapter's human face: deciding what the wealth is <em>for</em> after two lifetimes. For some, maximising transfer through Chapter 11's tools. For others, giving while living, watching a deposit become a home, funding education through the normal-expenditure exemption, gifting with warm hands. The families who navigate it best share one habit: they talk about it early, before events force the conversation.</p>
+</section>
+
+<figure class="life"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=70" alt="A lakeside cabin beneath mountains at dusk" loading="lazy"><figcaption>Thirty years is a long time to fund. It is also a wonderful amount of time to have.</figcaption></figure>
+
+<section class="chapter" id="chapter-15">
+  <span class="eyebrow">Chapter 15 · Bringing It Together</span>
+  <h2>A 25-Year Retirement, Modelled</h2>
+  <p class="lede">To watch visibility, layering, sequencing, sustainability and the 2027 estate rules interact, we run one household's full retirement two ways. <strong>An illustrative simulation only, not a prediction.</strong></p>
+  <div class="note"><h4>The household</h4><p style="margin:0">Mark and Helen, both 60. Combined DC pensions £1,100,000 · ISAs £300,000 · Mark's index-linked DB pension £40,000 (joint-life 50%) · full state pensions from 67 (~£25,095 combined at 2026/27 rates). Target income £75,000 gross in today's terms. Assumptions: 3% inflation, 5% return, no taper or MPAA issues, no care shock. A single retiree's numbers differ materially — apply the framework, not the figures.</p></div>
+  <p><strong>Strategy A — defer the pensions, spend the ISA first.</strong> The traditional instinct: minimal DC withdrawals before 67, ISAs depleted early, heavy DC draws later.<br><strong>Strategy B — blended early sequencing.</strong> Chapter 5's principle: moderate DC withdrawals from day one, partial ISA use, a smoother taxable profile throughout.</p>
+  <div class="chartbox">
+    <div class="chart-h">DC pension pot over 25 years — simulated year by year, illustrative</div>
+    <svg viewBox="0 0 640 300" role="img" aria-label="Line chart from a year-by-year simulation: Strategy A's pension grows to roughly 3.37 million pounds by age 85; Strategy B's reaches roughly 2.72 million, but Strategy B also finishes with 650 thousand pounds preserved in ISAs, so total wealth is the same.">
+      <line x1="60" y1="20" x2="60" y2="250" stroke="#E2E8F0"/><line x1="60" y1="250" x2="620" y2="250" stroke="#E2E8F0"/>
+      <text x="16" y="34" class="ax">£3.5M</text><text x="22" y="160" class="ax">£2M</text><text x="24" y="253" class="ax">£1M</text>
+      <text x="56" y="272" class="ax">60</text><text x="212" y="272" class="ax">67</text><text x="392" y="272" class="ax">75</text><text x="612" y="272" class="ax">85</text>
+      <line x1="217" y1="20" x2="217" y2="250" stroke="#EAD9B0" stroke-dasharray="4 4"/><text x="224" y="34" class="ax" fill="#9C7F3F">State pensions begin</text>
+      <polyline points="60,241 82,236 105,230 127,225 150,219 172,213 194,206 217,200 239,193 262,185 284,177 306,169 329,160 351,151 374,142 396,134 418,126 441,117 463,108 486,98 508,88 530,78 553,67 575,56 598,44 620,32" fill="none" stroke="#C9A961" stroke-width="3" stroke-linejoin="round"/>
+      <polyline points="60,241 82,239 105,238 127,236 150,234 172,233 194,231 217,230 239,226 262,221 284,217 306,212 329,207 351,201 374,195 396,188 418,181 441,173 463,164 486,156 508,146 530,136 553,126 575,115 598,104 620,92" fill="none" stroke="#13C29B" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="620" cy="32" r="4" fill="#C9A961"/><circle cx="620" cy="92" r="4" fill="#13C29B"/>
+    </svg>
+    <div class="legend"><span><i style="background:#C9A961"></i>Strategy A — ISA first (DC ≈£3.37M at 85 · ISAs £0)</span><span><i style="background:#13C29B"></i>Strategy B — blended (DC ≈£2.72M at 85 · ISAs ≈£650k preserved)</span></div>
+  </div>
+  <p><strong>1 · Total wealth finishes identical, its location does not.</strong> Same assets, same spending, same returns: both strategies end age 85 with about £3.37M. Strategy A holds every pound of it in the pension. Strategy B holds £2.72M in the pension and roughly <strong>£650,000 preserved in ISAs</strong> because filling two basic-rate bands with measured pension withdrawals each year let the tax-free wrapper survive. Where the wealth sits is the whole game from here.</p>
+  <p><strong>2 · The blended path also pays less tax along the way.</strong> In this simulation Strategy B pays roughly £386,000 of lifetime income tax against Strategy A's £415,000, about <strong>£29,000 less</strong> because two personal allowances and two basic-rate bands are used every year rather than left partly empty early and overwhelmed late.</p>
+  <p><strong>3 · From April 2027, the location difference becomes an estate difference.</strong> Both wrappers now sit inside the IHT estate, but only the pension carries the <em>second</em> layer: income tax when a beneficiary draws it after an after-75 death. On the £650,000 that Strategy A leaves in the pension instead of ISAs, a higher- or additional-rate heir could face up to roughly <strong>£176,000 of additional combined tax</strong> that the ISA version never attracts. The old "pension last" instinct, applied blindly, now has a six-figure price tag for estates above the bands.</p>
+  <p><strong>4 · Inflation doubles the job.</strong> £75,000 today is £100,000+ by mid-retirement and £150,000+ by its end. Withdrawal pacing and compounding cannot be planned separately — the simulation's need line nearly doubles across the 25 years.</p>
+  <p><strong>5 · The survivor inherits the sequencing.</strong> If one spouse dies at 78, the DB halves, one state pension stops, and one personal allowance disappears — the same income now stacks against a single set of bands, and a lone survivor drawing from a large deferred pot can be pushed towards the £100,000 taper a couple never touched. Strategy B's preserved ISAs are precisely the tool that lets a survivor manage income under the thresholds. Sequencing chosen at 60 decides how sharp that cliff is at 78.</p>
+  <div class="note"><h4>What the model shows, and its limits</h4><p style="margin:0">One simulation, stated assumptions (3% inflation, 2.5% DB indexation, 5% returns, even income-splitting, no market volatility, no care shock): the point is not the exact figures but the shape — identical households finish with identical wealth in very different <em>places</em>, with different lifetime tax and very different estate outcomes. Real planning stress-tests dozens of variants of exactly this model against your actual numbers.</p></div>
+</section>
+
+<section class="chapter" id="quickref">
+  <span class="eyebrow">Quick Reference · 2026/27</span>
+  <h2>The Numbers on One Page</h2>
+  <div class="tbl-scroll"><table>
+    <tr><th>Item</th><th>2026/27</th><th>Item</th><th>2026/27</th></tr>
+    <tr><td>Personal allowance</td><td>£12,570 (tapers £100k–£125,140)</td><td>Full new state pension</td><td>£241.30/wk · ≈£12,548/yr</td></tr>
+    <tr><td>Basic rate</td><td>20% to £50,270</td><td>Higher / additional</td><td>40% to £125,140 · 45% above</td></tr>
+    <tr><td>Pension annual allowance</td><td>£60,000 (taper to £10,000)</td><td>MPAA</td><td>£10,000</td></tr>
+    <tr><td>Tax-free lump sum</td><td>25%, within £268,275 LSA</td><td>LSDBA</td><td>£1,073,100</td></tr>
+    <tr><td>Pension access age</td><td>55 → 57 from 6 Apr 2028</td><td>ISA allowance</td><td>£20,000 (cash ISA £12,000 for most under-65s from Apr 2027)</td></tr>
+    <tr><td>Dividend rates</td><td>10.75% / 35.75% / 39.35% · £500 allowance</td><td>CGT</td><td>18% / 24% · £3,000 exempt</td></tr>
+    <tr><td>Personal savings allowance</td><td>£1,000 / £500 / £0 by band</td><td>VCT relief</td><td>20% on new subscriptions</td></tr>
+    <tr><td>IHT nil-rate band</td><td>£325,000 (frozen to 2031)</td><td>Residence NRB</td><td>£175,000 (tapers above £2m)</td></tr>
+    <tr><td>IHT rate</td><td>40% (36% with 10% to charity)</td><td>Annual gift exemption</td><td>£3,000 (+£250 small gifts)</td></tr>
+    <tr><td>Pensions into IHT estate</td><td>6 April 2027</td><td>Salary-sacrifice NI cap</td><td>£2,000/yr from 6 April 2029</td></tr>
+  </table></div>
+  <p class="src">England, Wales &amp; NI income-tax bands; Scotland differs. Scheduled 2027–2031 measures reflect announced legislation and may change before taking effect. Verify figures at point of use.</p>
+  <h3>The ten-minute retirement audit</h3>
+  <ol>
+    <li>List every pension, ISA, account and income source — values and access ages (Ch.2)</li>
+    <li>Check your state pension forecast and NI record</li>
+    <li>Confirm every pension beneficiary nomination is current (Ch.11)</li>
+    <li>Write down the annual number your portfolio must produce (Ch.1)</li>
+    <li>Test it against the sustainability calculator, and the 5% line (Ch.6)</li>
+    <li>Map which tax bands your fixed income already consumes (Ch.4)</li>
+    <li>Total what every pot actually charges you per year (Ch.10)</li>
+    <li>Estimate the estate against the £325k / £500k / £1m bands, including pensions from 2027 (Ch.11)</li>
+    <li>Confirm wills exist, LPAs are registered, and your partner could find everything (Ch.11, 14)</li>
+    <li>Count how many of the ten costly mistakes your current plan is exposed to (Ch.12)</li>
+  </ol>
+</section>
+
+<section class="chapter" id="chapter-16">
+  <span class="eyebrow">Chapter 16 · From Reading to Planning</span>
+  <h2>Next Steps</h2>
+  <p class="lede">Retirement planning in the new era is one connected system: goals set the income requirement; longevity and inflation set the horizon; layering and sequencing set the tax; vehicles, location and withdrawal order set the efficiency, and from April 2027, every one of those choices also shapes the estate. No single decision decides the outcome. The coordination does.</p>
+  <p>If this guide leaves one instruction, it is the audit above. If it leaves one date, it is <strong>6 April 2027</strong> — the day the oldest assumption in UK retirement planning reverses. And if it leaves one honest admission, it is this: you have just read sixteen chapters of interacting rules, and they interact differently for every household. That is not a reason for paralysis. It is the reason regulated, personal advice exists.</p>
+  <div class="cta-panel">
+    <div class="cta-panel-heading">Ready to move from reading to planning?</div>
+    <p class="cta-panel-lede">Two ways to start a conversation — choose whichever fits where you are. No obligation either way.</p>
+    <div class="cta-options">
+      <div class="cta-option"><span class="cta-option-tag">Option 1 · Recommended</span><div class="cta-option-title">Arrange an adviser introduction</div><p class="cta-option-desc">Tell us about your situation and we'll connect you with an <strong>FCA-regulated adviser</strong> who commonly works with people in similar positions: retirement income, pension structure and estate planning included. Complimentary, and with no obligation.</p><a class="btn btn-primary cta-option-link" href="https://trustevo.co.uk/arrange-introduction">Arrange an adviser introduction</a></div>
+      <div class="cta-option"><span class="cta-option-tag">Option 2 · Not sure yet?</span><div class="cta-option-title">15-minute intro call with a TrustEvo team member</div><p class="cta-option-desc">A short call with a member of the TrustEvo team — <strong>not an adviser</strong> — to understand your circumstances before anything else. No financial recommendations are given on the call.</p><a class="btn btn-ghost cta-option-link" style="margin:0" href="https://outlook.office.com/book/TrustEvoConnect@trustevo.co.uk/?ismsaljsauthenabled">Book a 15-minute intro call</a></div>
+    </div>
+  </div>
+</section>
+</main>
+</div>
+</div>
+
+<footer>
+  <div class="fin">
+    <a class="topnav-brand" href="#top"><div class="topnav-word">Trust<span class="evo">Evo</span></div></a>
+    <p style="margin-top:14px"><strong>Educational content only.</strong> This guide does not constitute financial, investment, tax, estate or legal advice, and no outcome is promised or implied. Calculators and worked examples are illustrations based on stated assumptions only; past performance neither guarantees nor reliably indicates future performance, and the value of investments can fall as well as rise. Individual circumstances vary: speak with an FCA-regulated financial adviser, and for estate matters a qualified solicitor, before acting. TrustEvo is a UK introductions service (a trading name of Nuvevo Ltd) and is not authorised or regulated by the Financial Conduct Authority. Figures relate to the 2026/27 tax year and legislation announced up to the 2025 Autumn Budget; measures scheduled for 2027–2031 may be amended before taking effect. Bands quoted are for England, Wales &amp; Northern Ireland; Scotland differs in places.</p>
+    <p style="margin-top:12px">© TrustEvo · The Wealth Turning Point · 2026/27 Edition</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+function ready(fn){if(document.readyState!=="loading"){fn()}else{document.addEventListener("DOMContentLoaded",fn)}}
+ready(function(){
+var $=function(id){return document.getElementById(id)};
+function num(el){var v=parseFloat(el.value);return isFinite(v)?v:0}
+function gbp(v){return "£"+Math.round(v).toLocaleString("en-GB")}
+function gbpM(v){return v>=1e6?"£"+(v/1e6).toFixed(2)+"M":gbp(v)}
+/* progress bar */
+var prog=$("progressBar");
+function onScroll(){var h=document.documentElement,max=h.scrollHeight-h.clientHeight;if(prog&&max>0){prog.style.width=(h.scrollTop/max*100)+"%"}}
+window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+/* scroll spy */
+var sn=document.querySelector(".sidebar-nav");var links=[].slice.call(sn?sn.querySelectorAll("a"):[]);
+var secs=links.map(function(a){return document.querySelector(a.getAttribute("href"))}).filter(Boolean);
+if("IntersectionObserver" in window&&secs.length){
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){links.forEach(function(a){a.classList.toggle("active",a.getAttribute("href")==="#"+en.target.id)})}})},{rootMargin:"-20% 0px -70% 0px"});
+  secs.forEach(function(s){io.observe(s)});
+}
+/* calc 1 — purchasing power */
+function ppCalc(){var inc=num($("pp-income")),yr=Math.max(1,num($("pp-years"))),r=num($("pp-rate"))/100;
+  var f=inc*Math.pow(1+r,yr);$("pp-out").textContent=gbp(f);
+  $("pp-lbl").textContent="needed per year in "+yr+" years for the same lifestyle";
+  $("pp-mult").textContent="×"+(inc>0?(f/inc).toFixed(2):"–")}
+/* calc 2 — income tax stack (EWNI 2026/27, non-savings) */
+function taxOn(t){var PA=12570;if(t>100000)PA=Math.max(0,PA-(t-100000)/2);
+  var taxable=Math.max(0,t-PA),tax=0;
+  tax+=Math.min(taxable,37700)*0.2;
+  tax+=Math.min(Math.max(taxable-37700,0),125140-37700)*0.4;
+  tax+=Math.max(taxable-125140,0)*0.45;
+  return tax}
+function stCalc(){var t=num($("st-sp"))+num($("st-db"))+num($("st-dc"))+num($("st-oth"));
+  var tax=taxOn(t);$("st-tax").textContent=gbp(tax);
+  $("st-rate").textContent=t>0?((tax/t)*100).toFixed(1)+"%":"0%";
+  var top=t<=12570?"0%":t<=50270?"20%":t<=100000?"40%":t<=125140?"~60% (allowance taper)":"45%";
+  $("st-note").textContent="average rate · top slice taxed at "+top}
+/* calc 3 — pot sustainability */
+function psCalc(){var pot=num($("ps-pot")),wd=num($("ps-wd")),r=num($("ps-ret"))/100,inf=num($("ps-inf"))/100;
+  var bal=pot,w=wd,total=0,years=0,MAX=60;
+  while(bal>0&&years<MAX){bal=bal*(1+r)-w;if(bal>=0){total+=w}else{total+=Math.max(0,w+bal)}w*=1+inf;years++}
+  if(years>=MAX&&bal>0){$("ps-years").textContent="60+ years";$("ps-lbl").textContent="pot outlives the projection at these assumptions"}
+  else{$("ps-years").textContent="~"+years+" years";$("ps-lbl").textContent="projected duration at these assumptions"}
+  $("ps-total").textContent=gbpM(total)}
+/* calc 4 — IHT on inherited pension */
+function ihCalc(){var pot=num($("ih-pot")),after=$("ih-age").value==="after",mr=parseFloat($("ih-band").value);
+  var iht=pot*0.4,rem=pot-iht,inc=after?rem*mr:0,net=rem-inc,rate=pot>0?((iht+inc)/pot)*100:0;
+  $("ih-rate").textContent=Math.round(rate)+"%";
+  $("ih-rl").textContent=after?("40% IHT + "+Math.round(mr*100)+"% income tax on drawdown compound to "+Math.round(rate)+"%"):"IHT layer only (death before 75)";
+  $("ih-net").textContent=gbp(net);
+  $("ih-nl").textContent="reaching the beneficiary · "+gbp(iht+inc)+" to combined tax on "+gbp(pot)}
+[["pp-income","pp-years","pp-rate"],["st-sp","st-db","st-dc","st-oth"],["ps-pot","ps-wd","ps-ret","ps-inf"],["ih-pot"]].forEach(function(g,i){
+  var fn=[ppCalc,stCalc,psCalc,ihCalc][i];
+  g.forEach(function(id){var el=$(id);if(el)el.addEventListener("input",fn)});fn()});
+$("ih-age").addEventListener("change",ihCalc);$("ih-band").addEventListener("change",ihCalc);
+});
+})();
+</script>
+</body>
+</html>
