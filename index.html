@@ -52,7 +52,7 @@ tr:last-child td{border-bottom:0}
 .note h4,.warn h4,.example h4{margin-top:0}
 .src{font-size:.78rem;color:var(--ink-muted);margin-top:-.6em}
 /* top navigation (45%% Club template) */
-.topnav{position:fixed;top:0;left:0;right:0;height:64px;background:rgba(11,29,58,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid rgba(255,255,255,.08);width:100%%;max-width:100vw;box-sizing:border-box}
+.topnav{position:fixed;top:0;left:0;right:0;height:64px;background:rgba(11,29,58,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid rgba(255,255,255,.08);width:100%;max-width:100vw;box-sizing:border-box}
 @media(max-width:640px){.topnav{padding:0 16px}.topnav-word{font-size:19px}.topnav-toc-toggle{padding:7px 12px;font-size:12px}}
 @media(max-width:380px){.topnav{padding:0 12px}.topnav-word{font-size:17px}.topnav-toc-toggle{padding:6px 10px;font-size:11px;gap:6px}.topnav-toc-toggle svg{width:12px;height:12px}}
 .topnav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--white)}
@@ -63,7 +63,7 @@ tr:last-child td{border-bottom:0}
 .topnav-toc-toggle:hover{background:rgba(255,255,255,.1);border-color:var(--teal)}
 @media(min-width:1025px){.topnav-toc-toggle{display:none}}
 /* layout shell — grid on desktop, single column on mobile */
-.shell{display:grid;grid-template-columns:var(--sidebar-w) minmax(0,1fr);min-height:100vh;background:var(--cream-warm);max-width:100%%}
+.shell{display:grid;grid-template-columns:var(--sidebar-w) minmax(0,1fr);min-height:100vh;background:var(--cream-warm);max-width:100%}
 @media(max-width:1024px){.shell{grid-template-columns:minmax(0,1fr)}}
 .sidebar{position:sticky;top:64px;align-self:start;height:calc(100vh - 64px);overflow-y:auto;padding:40px 28px 60px;border-right:1px solid var(--border-light);background:var(--cream-warm);-webkit-overflow-scrolling:touch}
 .sidebar-heading{font-family:var(--font-body);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:18px}
@@ -173,6 +173,28 @@ footer .fin{max-width:var(--max-w);margin:0 auto;padding:0 20px}
 footer .topnav-brand{font-size:1.3rem}
 .skip{position:absolute;left:-999px}.skip:focus{left:16px;top:14px;background:#fff;color:var(--navy);padding:.6em 1em;z-index:200;border-radius:8px}
 :focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+/* ---- Chapter 12: mistake entries ---- */
+.mistake{margin:0;padding:38px 0;border-top:1px solid var(--border-light);scroll-margin-top:80px}
+.mistake:first-of-type{border-top:2px solid var(--navy)}
+.mistake-head{display:flex;align-items:baseline;gap:18px;margin-bottom:18px}
+.mistake-index{flex:0 0 auto;font-family:var(--font-display);font-size:2.1rem;font-weight:700;color:var(--gold);line-height:1;letter-spacing:-.02em}
+.mistake-headings{flex:1 1 auto}
+.mistake-head h3{margin:0 0 6px;font-size:1.34rem;line-height:1.34;color:var(--navy)}
+.mistake-marker{margin:0;font-family:var(--font-body);font-size:.74rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-muted)}
+.mistake-belief{margin:0 0 20px;padding:2px 0 2px 22px;border-left:3px solid var(--teal);font-family:var(--font-display);font-size:1.34rem;font-style:italic;line-height:1.5;color:var(--navy);background:none}
+.mistake-reality p{margin-bottom:14px}
+.mistake-reality p:last-child{margin-bottom:0}
+.mistake-link{display:inline-block;margin-top:16px;font-size:.9rem;color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--border-subtle);padding-bottom:3px;transition:all .18s ease}
+.mistake-link strong{color:var(--navy);font-weight:600}
+.mistake-link:hover{color:var(--teal-dark);border-color:var(--teal)}
+.mistake-link:hover strong{color:var(--teal-dark)}
+@media(max-width:640px){
+.mistake-head h3{font-size:1.1rem}
+.mistake-index{font-size:1.6rem}
+.mistake-head{gap:12px}
+.mistake-belief{font-size:1.12rem;padding-left:16px}
+}
 </style>
 </head>
 <body>
@@ -342,6 +364,16 @@ window.TE_closeSidebar=function(e){if(e&&e.preventDefault)e.preventDefault();doc
   <p><strong>2 · State pension position.</strong> Your forecast, National Insurance record and gaps, and your state pension age. The full new state pension is <strong>£241.30 a week, roughly £12,548 a year</strong>, for 2026/27, against a £12,570 personal allowance. It is taxable, it consumes nearly the whole tax-free allowance by itself, and Chapter 4 shows why that £22 remainder matters so much. Check your personal forecast at <a href="https://www.gov.uk/check-state-pension" rel="noopener">gov.uk/check-state-pension</a>; the full figure assumes around 35 qualifying years, gaps can sometimes be filled deliberately, and claiming can be deferred, with the pension increasing for each year it is put off, a lever that occasionally suits those still earning at state pension age.</p>
   <p><strong>3 · ISAs and taxable assets.</strong> Stocks &amp; shares ISAs, cash ISAs, general investment accounts, cash — listed separately, because each is taxed differently on the way out. ISA withdrawals are never income for tax purposes; GIA dividends, interest and gains are taxable; cash interest above the personal savings allowance (£1,000 basic rate, £500 higher, nil additional) is taxable.</p>
   <p><strong>4 · Every other income source.</strong> Rental profit, dividends from a business you still own, consultancy earnings, annuities in payment, trust income. HMRC totals the lot inside one tax year — the mechanism at the heart of Chapter 4.</p>
+  <h3>What an older scheme may carry</h3>
+  <p>Consolidation is often sound housekeeping, and Chapter 10 puts a figure on what it can be worth. What is worth establishing first is whether any arrangement carries a feature attached to the <em>scheme</em> rather than to the money, because those do not travel with a transfer.</p>
+  <ul>
+    <li><strong>A guaranteed annuity rate.</strong> Some older contracts guarantee an income rate well above current market terms. The guarantee typically applies only to benefits taken from that scheme, on its terms and often at a specified age. Where safeguarded benefits are worth more than <strong>£30,000</strong>, taking regulated advice before giving them up is a legal requirement rather than a suggestion.</li>
+    <li><strong>Scheme-specific tax-free cash above 25%.</strong> A minority of older occupational arrangements carry a protected entitlement above the standard quarter. It is generally lost on transfer, other than by a block transfer meeting specific conditions.</li>
+    <li><strong>A protected pension age.</strong> Some members retain the right to draw benefits earlier than the standard minimum. That minimum rises from 55 to 57 on 6 April 2028, which makes a protected age more valuable, and its loss more consequential, than it was.</li>
+    <li><strong>Lifetime-allowance-era protections.</strong> Enhanced and fixed protection preserve higher tax-free lump-sum entitlements. The rules changed in April 2023 and again when the lifetime allowance was abolished, and these protections now interact with the lump sum allowance rather than with a lifetime limit. Where any is held, confirm the current position before restarting contributions or moving benefits.</li>
+    <li><strong>Charges and exit terms.</strong> Legacy charges are the reason to consolidate. Exit penalties and with-profits market value reductions are the reason to check the arithmetic before doing so.</li>
+  </ul>
+  <p>None of this argues against consolidation. It argues for reading each scheme's terms before anything moves, which is a documentation exercise rather than an investment decision.</p>
   <div class="example"><h4>Worked example — "looks simple" rarely is</h4>
   <p>Sarah, 58, believes she has "one pension and some savings". On review she holds four historic workplace pensions (£410,000 combined), one active workplace pension (£140,000), a SIPP (£220,000), a DB entitlement paying £18,000 from 65, ISAs of £160,000, £45,000 in cash, and a full state pension from 67.</p>
   <p style="margin:0">Nothing here is wrong. But until she knows whether the four historic pots overlap in allocation, what their combined charges are, whether the DB income is inflation-capped, and whether every beneficiary nomination is current, every sequencing decision that follows is a guess. Visibility first. Strategy second.</p></div>
@@ -478,7 +510,7 @@ window.TE_closeSidebar=function(e){if(e&&e.preventDefault)e.preventDefault();doc
     <li><strong>A liquidity buffer</strong>, commonly 12–24 months of planned withdrawals in cash or short-duration assets, drawn in downturn years so growth assets get time to recover. It does not remove risk; it removes <em>forced selling</em>.</li>
     <li><strong>Flexible withdrawals</strong> — plans that trim discretionary spending in poor years dramatically outlast rigid inflation-linked withdrawals.</li>
     <li><strong>Guaranteed-income layers</strong> — securing essential spending through DB income, the state pension and potentially an annuity (Chapter 8) frees the invested remainder to take productive long-term risk.</li>
-    <li><strong>A written policy</strong> — the rate, the buffer, the trim rule, agreed in calm markets. Chapter 12 shows what happens to plans that live in someone's head.</li>
+    <li><strong>A written policy</strong> — the rate, the buffer, the trim rule, agreed in calm markets. Chapter 12 sets out what tends to happen to plans that live in someone's head.</li>
   </ul>
   <div class="calc" id="calc-pot">
     <span class="eyebrow">Interactive Calculator</span>
@@ -741,33 +773,176 @@ window.TE_closeSidebar=function(e){if(e&&e.preventDefault)e.preventDefault();doc
 </section>
 
 <section class="chapter" id="chapter-12">
-  <span class="eyebrow">Chapter 12 · Learning From Others</span>
-  <h2>Ten Costly Retirement Mistakes, and What They Teach</h2>
-  <p class="lede">Most retirement damage is self-inflicted, repeats across generations, and is avoidable once named. These ten are drawn from decades of documented investor behaviour. Avoiding even a handful protects more wealth than most optimisation ever adds.</p>
-  <ol>
-    <li><strong>Placing "big bets".</strong> Few people would go to Monte Carlo, put all their money on the table and take one roll of the dice — the prize might be huge, but the probability isn't worth the pain of losing. Yet investors do exactly this, just less dramatically. The commonest version isn't seen as a bet at all: holding a large slab of retirement savings in an employer's shares. Loyalty and familiarity make it feel safe; it is an investment decision made on emotion. Swissair was so financially admired it was called "the flying bank" — until an acquisition spree met the 2000–02 bear market, its fleet was grounded in October 2001 and the airline closed within months. Enron had $100bn of revenues and was named America's most innovative company six years running; employees watched their shares become worthless almost overnight. Hardly anyone saw either coming, which is the point. The more dramatic version is the hot tip or the "sure thing" IPO, and it fails a three-part test: if you know something, the market almost certainly knows it too and it's already in the price; anything pitched as a sure thing with outsized returns could very well be a scam; and you could simply be wrong. Big bets tempt hardest when you feel behind on retirement savings or when the tipper is someone you respect, and mixing emotion with investing rarely ends well. Note that top executives typically run active diversification plans on their own company's stock. Copy them.</li>
-    <li><strong>Misunderstanding the risk–reward trade-off.</strong> Many retirees want predictable income, protected principal and peace of mind, and some stable, low-returning holdings may genuinely belong in a portfolio. But if long-term growth is needed to reach the goal, investing too cautiously <em>raises</em> the risk of running out (Chapter 6's tables: over 5-year windows equities are more volatile; over 30-year windows they have historically delivered higher returns with comparable or lower variability of outcome). Fixed interest carries its own risks too: default risk — the issuer may not return your principal, and reinvestment risk, where maturing money can only be re-lent at lower rates, shrinking the very income stream you were relying on. And a special warning for lifestyle and target-date funds: they de-risk automatically as a chosen date approaches, dampening short-term volatility while potentially abandoning the long-term growth your plan still requires. A formula keyed to nothing but your retirement date ignores everything that actually matters about your circumstances. Risk is matched to horizon and goal, not to a birthday.</li>
-    <li><strong>Ignoring who holds the money.</strong> Two words: Bernie Madoff. One of the largest financial frauds in history, run for decades on a single structural feature: his firm was both the money manager <em>and</em> the custodian of the funds. Managed accounts are perfectly normal; virtually all Ponzi schemes, however, depend on the manager controlling custody. Check one thing this week: if anyone other than you manages your investments, find out who the custodian is, and prefer an independent, respected third party (a major brokerage or bank), distinct and separate from the decision-maker. Separation won't stop a manager making mistakes; it restricts their ability to transfer and loot your account.</li>
-    <li><strong>Paying excessive fees.</strong> Fees cost you twice: the out-of-pocket charge itself, and the growth that money never earns, and compounding turns "small" into staggering. £1,000,000 invested for 20 years at 10% gross ends at £4,972,540 with 1.5% annual costs, £4,138,568 at 2.4% — <strong>over £830,000 apart</strong> on a 0.9% difference. Annuities deserve particular scrutiny here, with layered ongoing charges and surrender penalties that can reach 10% or more. Add the forgotten workplace pensions still paying legacy charges (Chapter 10's consolidation example) and the fee audit is often the highest-certainty "return" available in the whole plan. You worked too hard for the money to donate six figures to friction.</li>
-    <li><strong>Not planning for inflation's long-term effects.</strong> The mistake retirees make while feeling prudent. From 2000 to 2020 UK inflation averaged only around 2%, and even at that rate, what costs £500,000 today costs nearly £610,000 in ten years, a 22% rise just to stand still. History supplies the warnings: roughly 15% average from 1973 to 1981, above 10% in 2022, and a long-run UK average near 4–5%. Two personal factors sharpen it: your own inflation rate can exceed the headline, and many people spend <em>more</em> in retirement than expected: travel, the house, a second home, helping children and grandchildren. A conservative fixed-interest-only strategy can quietly lock in falling purchasing power for three decades (Chapter 3).</li>
-    <li><strong>Relying on "common knowledge".</strong> Three flavours. <em>Investment clichés:</em> the old rule allocating by age — the older you are, the less in equities — collides with the fact that a 60-year-old today typically has 24 more years to fund, a spouse who may live longer still, and circumstances no formula sees: a vigorous 60-year-old with long-lived parents and one with a serious heart condition should not hold the same portfolio because they share a birthday. <em>Following the herd:</em> equities move on anticipation, so if everyone already has the information that excites you, the advantage is gone — you're late. Individual investors underperform the markets they hold largely by panic-selling near bottoms, buying near peaks, and chasing hot funds and sectors. <em>Taking advice from talking heads:</em> the financial press must publish something dramatic every day and feels obliged to explain every move, yet, as far as anyone can tell, no one consistently keeps track of how well those calls perform. Informed beats loud; be cautious about major decisions made on what you heard this week.</li>
-    <li><strong>Trying to time the market.</strong> Perfect timing is a pursuit with a long history of disappointing its pursuers. Corrections — drops of 10–20% — arrive without warning and can end as fast as they began; bear markets build slowly and rarely announce themselves; even professionals find the distinction hard in real time. And the cost of being wrong is asymmetric, because missing the best days is catastrophic:
-      <div class="tbl-scroll"><table>
-        <tr><th>Missing the best… (of 7,555 trading days, 1993–2022)</th><th>Cumulative return falls to</th><th>Annualised</th></tr>
-        <tr><td>0 days — stayed invested</td><td>559%</td><td>~6.5%</td></tr>
-        <tr><td>10 days (0.13% of days)</td><td>271%</td><td>4.5%</td></tr>
-        <tr><td>20 days</td><td>144%</td><td>3.0%</td></tr>
-        <tr><td>30 days</td><td>73%</td><td>1.9%</td></tr>
-        <tr><td>40 days</td><td>26%</td><td>0.8%</td></tr>
-        <tr><td>50 days (0.66% of days)</td><td>−8%</td><td>−0.3%</td></tr>
-      </table></div>
-      <p class="src">MSCI World Price Index, 31/12/1992–31/12/2022, GBP. Illustration; past performance does not guarantee future results.</p>
-      Ask yourself honestly: are you savvy enough to time all those moves? Do you know anyone who is? Benjamin Graham said it best, in the short run the market is a voting machine; in the long run, a weighing machine. Daily and weekly moves are votes, and their impact is fleeting. Retirements are weighed. For long-term investors, the prudent default is to stay invested unless there are strong, emotion-free reasons to believe a prolonged downturn is in its early stages, a bar that is very rarely cleared.</li>
-    <li><strong>Buying gold or other fear trades.</strong> Look at the long-term facts: US equities annualised around 11.6% and world equities 10.8% over the last half-century, against roughly 7.3% for gold, which also pays nothing while you wait. Gold's marketing runs on fear: imminent collapse, crumbling world order, paper wealth wiped out. The world genuinely faces hard problems. It always has. The last century delivered world war, the rise and fall of communism, near-continuous conflict, terrorism and the Great Recession, and the equity market has continued to rise over time through all of it. So decide which you actually believe is more likely: continued long-term growth, or Armageddon. If truly the latter, gold won't help — buy food and invest in shelter. If the former, own productive assets and let them provide the comfortable retirement.</li>
-    <li><strong>Mismanaging withdrawals, in both directions.</strong> Switching gears from saving to spending is genuinely hard: even people with large nest eggs find deciding how to generate income, and how much to spend, stressful and confusing, a tough proposition with emotional components, which is often a recipe for poor decisions. Withdrawing too much, too early, in down markets can be unrecoverable: fall 20%, withdraw 11% anyway, and you need over a 40% gain just to get back, and two bear-market years of that can dig a hole the late-retirement years leave no time to climb out of. But the opposite is also a real mistake: taking too little out of fear of touching principal cheats you of experiences the plan fully affords. Reducing principal is perfectly fine when the pot is large enough for your lifetime, or your goals simply don't require preserving it, perhaps you'd rather live it up a little. The key is knowing yourself and your goals (Chapter 1), planning on roughly 5% or less as the sustainable default, and protecting the downside if things go badly.</li>
-    <li><strong>Investing with a home-country bias.</strong> Patriotism belongs on the passport, not in the portfolio. The UK is roughly 4% of the world's developed equity markets: an all-UK portfolio ignores 96% of the opportunity set while making a concentrated sector bet — heavy in energy (around 14% of the UK market versus ~5% globally) and financials, and barely exposed to technology, the largest sector in world indices. No single country outperforms all the time; leadership rotates, and this year's winner can easily be next year's laggard. A globally diversified portfolio raises the odds of holding the leaders wherever they emerge, avoids being stranded in a market delivering subpar returns, and — done properly — smooths the ride on the way to the goal.</li>
-  </ol>
-  <div class="note"><h4>The common denominator</h4><p style="margin:0">Every mistake here is an emotional decision in a rational costume: loyalty, fear, thrift, patriotism, impatience. Naming them is half the protection. Having a disciplined counterparty at the moment they get made is the other half.</p></div>
+  <span class="eyebrow">Chapter 12 &#183; The Diagnostic</span>
+  <h2>Ten Costly Retirement Mistakes Larger Portfolios Make</h2>
+  <p class="lede">Everything in this chapter is explained in full somewhere else in the guide. Nothing here is new. What is different is the angle: instead of working through a subject, each entry starts from something sensible people genuinely believe, and looks at where that belief stops holding once a portfolio passes roughly £250,000.</p>
+  <blockquote>None of these are errors of understanding. They are beliefs that were perfectly sound at a smaller portfolio and quietly stopped being sound as it grew.</blockquote>
+  <p>Each of the ten follows the same shape. The mistake, in plain terms. The belief that sits behind it. What the position actually is. Then a route into the chapter that covers it properly. Read it as a checklist rather than an argument: the useful question on each entry is not whether the point is valid, but whether it applies to you.</p>
+  <div class="note"><h4>How to read this chapter</h4>
+  <p style="margin:0">These are general observations about how the rules operate at this level of accumulated wealth. They are not statements about your position, and nothing here is a recommendation to take or avoid any course of action. Circumstances differ considerably, and the chapters linked from each entry set out the detail and the exceptions.</p></div>
+
+  <div class="mistake" id="m01">
+    <div class="mistake-head">
+      <span class="mistake-index">01</span>
+      <div class="mistake-headings">
+        <h3>Building the whole retirement inside one vehicle</h3>
+        <p class="mistake-marker">£7,486 &#183; Income tax on £50,000 drawn from a pension alone</p>
+      </div>
+    </div>
+    <blockquote class="mistake-belief">&ldquo;It is all in the pension, which is the tax-efficient place for it.&rdquo;</blockquote>
+    <div class="mistake-reality">
+    <p>A pension is one of several places retirement income can come from, and it is the one taxed most heavily as income. Below a certain size the question never really arises, because withdrawals sit inside the personal allowance and the treatment barely matters. Above it, the same income assembled across a pension, an ISA, a general investment account, cash and an investment bond draws on several different tax treatments at once.</p>
+    <p>The gap is not marginal. Chapter 9 works through £50,000 of annual income built from five sources against the same £50,000 taken from a pension alone, and the difference in tax is £7,486 a year, repeating. The multi-vehicle version is not free: bond tax is deferred rather than cancelled, ISA and CGT capacity are finite, and sustaining the pattern takes years of prior wrapper-filling. That is precisely why the mix is built long before it is needed.</p>
+    </div>
+    <a class="mistake-link" href="#chapter-9">Read the full chapter &#8594; <strong>Chapter 9 &#183; The Multi-Vehicle Playbook</strong></a>
+  </div>
+
+  <div class="mistake" id="m02">
+    <div class="mistake-head">
+      <span class="mistake-index">02</span>
+      <div class="mistake-headings">
+        <h3>Still treating the pension as the last asset to spend</h3>
+        <p class="mistake-marker">6 April 2027 &#183; Unused pensions come within the estate</p>
+      </div>
+    </div>
+    <blockquote class="mistake-belief">&ldquo;Spend everything else first and leave the pension untouched.&rdquo;</blockquote>
+    <div class="mistake-reality">
+    <p>That order was correct for forty years, and for one reason: unused pension funds sat outside the estate. From 6 April 2027 most unused defined-contribution funds are expected to be included in the inheritance-tax estate, which removes the reason the habit existed.</p>
+    <p>Where inheritance tax applies and a beneficiary then draws the fund as taxable income, the two layers stack, and in the worst combination the effective rate approaches 67%. Transfers to a surviving spouse remain exempt, death-in-service benefits paid from a registered pension scheme are expected to stay outside the estate, and estates within the available nil-rate bands pay nothing. The question is therefore whether the estate sits above the bands, not whether the pension is large.</p>
+    </div>
+    <a class="mistake-link" href="#chapter-11">Read the full chapter &#8594; <strong>Chapter 11 &#183; Estate, IHT &amp; the 2027 Change</strong></a>
+  </div>
+
+  <div class="mistake" id="m03">
+    <div class="mistake-head">
+      <span class="mistake-index">03</span>
+      <div class="mistake-headings">
+        <h3>Holding more than the ISA can absorb</h3>
+        <p class="mistake-marker">£20,000 &#183; Annual ISA subscription limit</p>
+      </div>
+    </div>
+    <blockquote class="mistake-belief">&ldquo;I will move it into ISAs over time.&rdquo;</blockquote>
+    <div class="mistake-reality">
+    <p>At £20,000 a year, moving a substantial portfolio inside the ISA wrapper is a decade-long exercise, and from April 2027 the cash element falls to £12,000 for most people under 65. Meanwhile the balance sits in a general investment account, where dividends and interest are taxable as they arise and gains accumulate against a £3,000 annual exempt amount that does not carry forward.</p>
+    <p>This is the point at which wrapper choice stops being a preference and becomes a constraint with a schedule attached. A portfolio that fits comfortably inside annual allowances never meets it. One that does not has a sequencing question running for years, and the order in which it is answered decides how much of the growth is sheltered when it eventually matters.</p>
+    </div>
+    <a class="mistake-link" href="#chapter-8">Read the full chapter &#8594; <strong>Chapter 8 &#183; The Vehicle Room</strong></a>
+  </div>
+
+  <div class="mistake" id="m04">
+    <div class="mistake-head">
+      <span class="mistake-index">04</span>
+      <div class="mistake-headings">
+        <h3>Leaving the years before the state pension unused</h3>
+        <p class="mistake-marker">£22 &#183; What remains of the personal allowance once the state pension is in payment</p>
+      </div>
+    </div>
+    <blockquote class="mistake-belief">&ldquo;Leave the pension alone as long as possible and let it grow.&rdquo;</blockquote>
+    <div class="mistake-reality">
+    <p>The full new state pension is around £12,548 a year against a frozen £12,570 personal allowance. Once it is in payment, effectively every pound of private pension drawn on top is taxable from the first pound. Before it starts, that allowance is available each year, and each year it goes unused it expires.</p>
+    <p>Deferring everything into the later phase concentrates the same income into the years where the allowance is already spoken for. The window between access age and state pension age is only a planning asset to someone with enough elsewhere to live on while using it, which makes it a question of portfolio size rather than of age.</p>
+    </div>
+    <a class="mistake-link" href="#chapter-5">Read the full chapter &#8594; <strong>Chapter 5 &#183; The Early-Retirement Window</strong></a>
+  </div>
+
+  <div class="mistake" id="m05">
+    <div class="mistake-head">
+      <span class="mistake-index">05</span>
+      <div class="mistake-headings">
+        <h3>Assuming retirement income sits below the thresholds</h3>
+        <p class="mistake-marker">£50,270 and £100,000 &#183; Both reachable from a large enough portfolio</p>
+      </div>
+    </div>
+    <blockquote class="mistake-belief">&ldquo;Tax gets simpler once I stop working.&rdquo;</blockquote>
+    <div class="mistake-reality">
+    <p>Retirement income arrives in layers: state pension, any defined-benefit income, drawdown, dividends, interest, rent. HMRC totals them inside one tax year, which means they are assessed together rather than separately.</p>
+    <p>A portfolio large enough to fund a substantial retirement income puts the holder back across £50,270, and in some cases across £100,000, where the personal allowance is withdrawn at £1 for every £2. The bands associated with working life do not stop at retirement. They simply arrive from a different set of sources, and those sources are considerably more controllable than a salary ever was.</p>
+    </div>
+    <a class="mistake-link" href="#chapter-4">Read the full chapter &#8594; <strong>Chapter 4 &#183; Income Layering &amp; Tax Compression</strong></a>
+  </div>
+
+  <div class="mistake" id="m06">
+    <div class="mistake-head">
+      <span class="mistake-index">06</span>
+      <div class="mistake-headings">
+        <h3>Consolidating without checking what each scheme carries</h3>
+        <p class="mistake-marker">£30,000 &#183; Safeguarded benefits above which regulated advice is a legal requirement</p>
+      </div>
+    </div>
+    <blockquote class="mistake-belief">&ldquo;Tidying it all into one place has to be an improvement.&rdquo;</blockquote>
+    <div class="mistake-reality">
+    <p>Usually it is. Chapter 10 sets out what consolidation can be worth: on a £400,000 pot over fifteen years, a 0.9% difference in charges is worth roughly £126,000, with no extra risk and no extra contributions. The reason to check before transferring is that some features attach to the scheme rather than to the money, and those do not travel.</p>
+    <p>A guaranteed annuity rate, scheme-specific tax-free cash above 25%, a protected pension age that matters more now the minimum rises to 57 in April 2028. These sit in older arrangements, which is to say in the pots of people who have been contributing for decades and hold several. Where safeguarded benefits exceed £30,000, regulated advice is a legal requirement before giving them up, which is the rules acknowledging the same asymmetry.</p>
+    </div>
+    <a class="mistake-link" href="#chapter-2">Read the full chapter &#8594; <strong>Chapter 2 &#183; Establish Complete Visibility</strong></a>
+  </div>
+
+  <div class="mistake" id="m07">
+    <div class="mistake-head">
+      <span class="mistake-index">07</span>
+      <div class="mistake-headings">
+        <h3>Reading the tax-free lump sum as a percentage</h3>
+        <p class="mistake-marker">£268,275 &#183; Lump sum allowance for most people</p>
+      </div>
+    </div>
+    <blockquote class="mistake-belief">&ldquo;I can take 25% of it tax-free.&rdquo;</blockquote>
+    <div class="mistake-reality">
+    <p>Up to a point. The lump sum allowance caps the tax-free element at £268,275 for most people, which is 25% of £1,073,100. Below that figure the percentage holds. Above it the percentage stops and the cap takes over, so a larger pot does not produce a larger tax-free sum.</p>
+    <p>The lump sum and death benefit allowance works on the same £1,073,100 figure and covers tax-free lump sums paid in life together with lump sum death benefits where death occurs before 75. Employer death-in-service cover provided through a <em>registered</em> group life scheme is tested against it and can consume part of the headroom before pension death benefits are counted. Cover provided through an excepted group life policy sits outside the allowance, under different legislation, so which structure an employer uses changes the answer. Both allowances reward being known about in advance rather than discovered at the point of drawing.</p>
+    </div>
+    <a class="mistake-link" href="#chapter-7">Read the full chapter &#8594; <strong>Chapter 7 &#183; The Final Working Years</strong></a>
+  </div>
+
+  <div class="mistake" id="m08">
+    <div class="mistake-head">
+      <span class="mistake-index">08</span>
+      <div class="mistake-headings">
+        <h3>Taking a small amount out early, while still contributing</h3>
+        <p class="mistake-marker">£10,000 &#183; Annual allowance once the MPAA applies</p>
+      </div>
+    </div>
+    <blockquote class="mistake-belief">&ldquo;I will just take a bit out and carry on paying in.&rdquo;</blockquote>
+    <div class="mistake-reality">
+    <p>Accessing a defined-contribution pension flexibly triggers the money purchase annual allowance, which caps future contributions at £10,000 a year. The cap is usually permanent, and it applies regardless of how small the withdrawal was.</p>
+    <p>It only costs anything where more than £10,000 a year would otherwise have gone in, which describes someone still earning well in their final working years. The people most likely to trigger it by accident are the people for whom it is most expensive, and the order of those two events is the whole of the mistake.</p>
+    </div>
+    <a class="mistake-link" href="#chapter-7">Read the full chapter &#8594; <strong>Chapter 7 &#183; The Final Working Years</strong></a>
+  </div>
+
+  <div class="mistake" id="m09">
+    <div class="mistake-head">
+      <span class="mistake-index">09</span>
+      <div class="mistake-headings">
+        <h3>Gifting out of capital when income would have done</h3>
+        <p class="mistake-marker">No seven-year clock &#183; On regular gifts from genuine surplus income</p>
+      </div>
+    </div>
+    <blockquote class="mistake-belief">&ldquo;I have used my £3,000 annual exemption, so that is my limit for the year.&rdquo;</blockquote>
+    <div class="mistake-reality">
+    <p>The annual exemption is one route among several. Regular gifts made from genuine surplus income, forming part of normal expenditure and leaving the giver’s standard of living intact, are exempt immediately, with no seven-year period to survive. The exemption is defined by the income test rather than by a fixed amount, which is what makes it different in kind from the others.</p>
+    <p>It is only available to households whose income genuinely exceeds their needs, which is why it goes unused most often by the people best placed to use it. Records matter: the exemption is claimed by executors and evidenced from the giver’s own income and expenditure, so the documentation is built while the gifts are being made rather than afterwards.</p>
+    </div>
+    <a class="mistake-link" href="#chapter-11">Read the full chapter &#8594; <strong>Chapter 11 &#183; Estate, IHT &amp; the 2027 Change</strong></a>
+  </div>
+
+  <div class="mistake" id="m10">
+    <div class="mistake-head">
+      <span class="mistake-index">10</span>
+      <div class="mistake-headings">
+        <h3>Planning for the first death rather than the second</h3>
+        <p class="mistake-marker">£52,547 &#183; Income meeting one personal allowance where two used to be</p>
+      </div>
+    </div>
+    <blockquote class="mistake-belief">&ldquo;Everything passes to my spouse, so there is nothing to plan.&rdquo;</blockquote>
+    <div class="mistake-reality">
+    <p>Transfers between spouses are exempt, so the first death rarely produces an inheritance tax bill. It reliably produces an income tax one. Chapter 14 follows a household from £85,095 of income spread across two personal allowances to £52,547 pressing against a single allowance, with higher-rate exposure appearing on reduced income at the worst possible moment.</p>
+    <p>The estate itself meets the nil-rate bands at the second death, by which point both halves have been combined and, usually, have grown. The residence nil-rate band reduces by £1 for every £2 of estate value above £2m, so allowances that looked comfortable against one half can behave very differently against the whole. Sequencing decisions taken a decade earlier decide how sharp both cliffs are.</p>
+    </div>
+    <a class="mistake-link" href="#chapter-14">Read the full chapter &#8594; <strong>Chapter 14 &#183; Survivorship &amp; Legacy</strong></a>
+  </div>
+
+  <div class="note"><h4>The common denominator</h4>
+  <p style="margin:0">Every entry here is a decision that was correct once and was never revisited, or a rule that only starts applying at a size most people pass without noticing. None of them announce themselves. Recognising more than one is common, and usually means individual decisions have each been made well in isolation, without anyone looking at how they interact.</p></div>
 </section>
 
 <section class="chapter" id="chapter-13">
