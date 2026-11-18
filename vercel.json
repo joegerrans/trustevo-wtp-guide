@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/pdf",
+      "destination": "/The-Wealth-Turning-Point-2026-27.pdf",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.pdf",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
